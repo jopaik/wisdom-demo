@@ -1,0 +1,8 @@
+---
+- name: Cisco NXOS Ansible
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+    - 
+  

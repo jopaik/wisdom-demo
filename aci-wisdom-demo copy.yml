@@ -1,0 +1,28 @@
+---
+- name: Cisco ACI Ansible
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+    - name: Create tenant
+    
+  
+
+    - name: Create VRF
+      cisco.aci.aci_vrf:
+        hostname: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        use_proxy: "no"
+        validate_certs: "{{ validate_certs }}"
+        tenant: AnsibleTest
+        name: ansible_test
+        description: Ansible Test
+        state: present
+        output_path: dump.json
+    
+    
+
+    
+    
+    

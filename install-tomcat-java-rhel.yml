@@ -1,0 +1,49 @@
+---
+- name: Install Java and Tomcat
+  hosts: all
+  become: true
+  vars:
+    java_version: "11"
+    tomcat_version: "9.0.50"
+
+  tasks:
+    - name: Install Java
+      yum:
+        name:
+          - "java-{{ java_version }}-openjdk"
+          - "java-{{ java_version }}-openjdk-devel"
+        state: present
+
+    - name: Download Tomcat
+      get_url:
+        url: "https://archive.apache.org/dist/tomcat/tomcat-{{
+tomcat_version }}/v{{ tomcat_version }}/bin/apache-tomcat-{{
+tomcat_version }}.tar.gz"
+        dest: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
+
+    - name: Extract Tomcat
+      unarchive:
+        src: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
+        dest: "/opt"
+        remote_src: true
+        extra_opts: "--strip-components=1"
+
+    - name: Set Tomcat ownership
+      file:
+        path: "/opt/apache-tomcat-{{ tomcat_version }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        recurse: yes
+
+    - name: Start Tomcat service
+      systemd:
+        name: tomcat
+        state: started
+        enabled: true
+        daemon_reload: yes
+        no_block: yes
+        ignore_errors: yes
+        args:
+          - "JAVA_HOME=/usr/lib/jvm/java-{{ java_version }}-openjdk"
+          - "CATALINA_HOME=/opt/apache-tomcat-{{ tomcat_version }}"

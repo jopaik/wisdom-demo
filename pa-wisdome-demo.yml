@@ -1,0 +1,21 @@
+---
+- name: panos Firewall Ansible Playbook
+  hosts: firewalls
+  gather_facts: false
+
+  tasks:
+    - name: panos rules
+      cisco.panos.panos_security_rule:
+        provider:
+          ip_address: "{{ ansible_host }}"
+          username: "{{ ansible_user }}"
+          password: "{{ password }}"
+        rule_name: "{{ item.name }}"
+        description: "{{ item.description }}"
+        source_zone: "{{ item.source_zone }}"
+        source_ip: "{{ item.source_ip }}"
+        destination_zone: "{{ item.destination_zone }}"
+        destination_ip: "{{ item.destination_ip }}"
+        action: "{{ item.action }}"
+        state: "{{ item.state }}"
+      loop: "{{ panos_rules }}"

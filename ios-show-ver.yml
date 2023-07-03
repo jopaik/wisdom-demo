@@ -1,9 +1,0 @@
----
-- name: install web server
-  hosts: routers
-  gather_facts: no
-
-  tasks:
-    - name: install neovim
-    
-

@@ -1,0 +1,38 @@
+---
+- name: Cisco ACI Ansible
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+    - name: Create tenant
+      cisco.aci.aci_tenant:
+        host: "{{ ansible_host }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        validate_certs: false
+        tenant: ANSIBLE-WORKSHOP
+        description: Deployed by ANSIBLE
+        
+    - name: Create vrf on tenant AnsibleTest
+      cisco.aci.aci_vrf:
+        host: "{{ inventory_hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        use_proxy: false
+        validate_certs: false
+        name: AnsibleTest
+        state: present
+        output_path: dump.json
+    - name: Create BD
+      cisco.aci.aci_bd:
+        host: "{{ inventory_hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        use_proxy: false
+        validate_certs: false
+        name: AnsibleTest_BD1
+        vrf: AnsibleTest_VRF
+        tenant: AnsibleTest
+        state: present
+        output_path: dump.json
+

@@ -1,0 +1,35 @@
+---
+- name: Cisco IOS Ansible
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+    - name: command show version
+      cisco.ios.ios_command:
+        commands: '{{ commands }}'
+      register: print_output
+    
+    - name: show configuration
+      cisco.ios.ios_command:
+        commands:
+        - show running-config
+      register: config
+
+    - name: ios show interfaces
+      cisco.ios.ios_command:
+        commands: '{{ commands }}'
+      register: show_output
+
+    - name: configure ios ping
+      cisco.ios.ios_ping:
+        dest: '{{ dest }}'
+        count: 3
+      loop:
+      - 10.0.0.1
+      - 10.0.0.2
+
+    - name: configure ios_bgp peer
+          cisco.ios.ios_bgp: {}
+
+
+  
