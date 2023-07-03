@@ -1,6 +1,6 @@
 ---
 - name: Install Java and Tomcat
-  hosts: all
+  hosts: "{{ HOSTS }}"
   become: true
   vars:
     java_version: "11"
@@ -16,7 +16,7 @@
 
     - name: Download Tomcat
       get_url:
-        url: "https://archive.apache.org/dist/tomcat/tomcat-{{
+        url: "https://www-us.apache.org/dist/tomcat/tomcat-{{
 tomcat_version }}/v{{ tomcat_version }}/bin/apache-tomcat-{{
 tomcat_version }}.tar.gz"
         dest: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
