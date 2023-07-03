@@ -42,5 +42,5 @@
         enabled: true
         daemon_reload: yes
         no_block: yes
-        ignore_errors: yes
+      ignore_errors: yes
         
