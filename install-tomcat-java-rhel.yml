@@ -54,9 +54,6 @@
         no_block: yes
       become: yes
       ignore_errors: yes
-      args:
-        - "JAVA_HOME=/usr/lib/jvm/java-{{ java_version }}-openjdk"
-        - "CATALINA_HOME=/opt/apache-tomcat-{{ tomcat_version }}"
   
   handlers:
     - name: Reload systemd
