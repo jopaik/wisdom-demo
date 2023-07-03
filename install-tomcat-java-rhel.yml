@@ -4,7 +4,7 @@
   become: true
   vars:
     java_version: "11"
-    tomcat_version: "9.0.50"
+    tomcat_version: "9.0.76"
 
   tasks:
     - name: Install Java
@@ -16,9 +16,7 @@
 
     - name: Download Tomcat
       get_url:
-        url: "https://www-us.apache.org/dist/tomcat/tomcat-{{
-tomcat_version }}/v{{ tomcat_version }}/bin/apache-tomcat-{{
-tomcat_version }}.tar.gz"
+        url: "https://dlcdn.apache.org/tomcat/tomcat-9/v{{ tomcat_version }}/binapache-tomcat-{{ tomcat_version }}.tar.gz"
         dest: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
 
     - name: Extract Tomcat
