@@ -19,7 +19,7 @@
         url: "https://dlcdn.apache.org//tomcat/tomcat-9/v{{ tomcat_version }}/bin/apache-tomcat-{{ tomcat_version }}.tar.gz"
         dest: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
         timeout: 120
-        
+
     - name: Extract Tomcat
       unarchive:
         src: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
@@ -43,6 +43,4 @@
         daemon_reload: yes
         no_block: yes
         ignore_errors: yes
-        args:
-          - "JAVA_HOME=/usr/lib/jvm/java-{{ java_version }}-openjdk"
-          - "CATALINA_HOME=/opt/apache-tomcat-{{ tomcat_version }}"
+        
