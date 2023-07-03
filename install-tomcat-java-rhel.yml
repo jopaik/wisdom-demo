@@ -35,6 +35,16 @@
         group: "{{ ansible_user }}"
         recurse: yes
 
+    - name: Create Tomcat systemd service file
+      template:
+        src: tomcat.service.j2
+        dest: /etc/systemd/system/tomcat.service
+        owner: root
+        group: root
+        mode: "0644"
+      notify:
+        - Reload systemd
+
     - name: Start Tomcat service
       systemd:
         name: tomcat
@@ -42,5 +52,14 @@
         enabled: true
         daemon_reload: yes
         no_block: yes
+      become: yes
       ignore_errors: yes
+      args:
+        - "JAVA_HOME=/usr/lib/jvm/java-{{ java_version }}-openjdk"
+        - "CATALINA_HOME=/opt/apache-tomcat-{{ tomcat_version }}"
+  
+  handlers:
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
         
