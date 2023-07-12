@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "plays": [],
+    "stdout": [
+        "Error: statfs /private/tmp/com.apple.launchd.7ZpdoyQvUd: no such file or directory"
+    ],
+    "status": "failed",
+    "status_color": 9
+}

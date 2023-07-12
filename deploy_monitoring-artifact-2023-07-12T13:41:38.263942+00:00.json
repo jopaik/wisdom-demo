@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "plays": [],
+    "stdout": [
+        "Error: statfs /var/folders/f1/7x5qn_b157s5nfmmfpdy8vhc0000gn/T/ansible-navigator/artifacts: no such file or directory"
+    ],
+    "status": "failed",
+    "status_color": 9
+}

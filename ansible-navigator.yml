@@ -1,0 +1,19 @@
+---
+ansible-navigator:
+  execution-environment:
+    container-engine: podman
+    enabled: true
+    environment-variables:
+      pass:
+      - ONE
+      - TWO
+      - THREE
+      set:
+        KEY1: VALUE1
+        KEY2: VALUE2
+        KEY3: VALUE3
+    image: quay.io/aap/ansible-automation-platform-20-ee-supported-rhel8
+    pull:
+      policy: never
+  logging:
+    level: critical
