@@ -2,16 +2,7 @@
 - name: Hello World
   hosts: localhost
   gather_facts: no
-  
   tasks:
     - name: Print Hello
       ansible.builtin.debug:
         msg: "Hello World from kemopq/hello_world collection"
-
-
-
-
- 
-
-
-

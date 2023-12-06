@@ -1,0 +1,19 @@
+---
+- name: Multitask Lightspeed demo
+  hosts: localhost
+  gather_facts: no
+  
+  tasks:
+    # Create a temp folder & create a temp file
+    - name: Create a temp folder
+      ansible.builtin.tempfile:
+        state: directory
+        suffix: demo
+      register: temp_folder
+    
+    - name: Create a temp file
+      ansible.builtin.tempfile:
+        state: file
+        suffix: demo
+      register: temp_file
+
