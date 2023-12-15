@@ -5,25 +5,11 @@
   tasks:
  
      # Install apache
-
+     - name: Install apache
+       ansible.builtin.package:
+         name: apache2
+         state: present
+     
      
      # copy index.html & enable apache service & allow http through firewall
-     - name: Copy index.html
-       ansible.builtin.copy:
-         src: index.html
-         dest: /var/www/html/index.html
-     
-     - name: Enable apache service
-       ansible.builtin.service:
-         name: apache2
-         state: started
-         enabled: true
-     
-     - name: Allow http through firewall
-       ansible.posix.firewalld:
-         port: 80/tcp
-         permanent: true
-         state: enabled
-     
-
-     
+  
