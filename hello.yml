@@ -3,6 +3,8 @@
   hosts: localhost
   gather_facts: no
   tasks:
-    - name: Print Hello
+    # Print Hello World
+    - name: Print Hello World
       ansible.builtin.debug:
-        msg: "Hello World from kemopq/hello_world collection"
+        msg: Hello World!
+    

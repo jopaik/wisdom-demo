@@ -18,6 +18,8 @@
         state: present
       register: tenant_present
     
+
+    
     # create VRF & create BD
     - name: Create VRF
       cisco.aci.aci_vrf:
@@ -47,4 +49,4 @@
         bd: ansible_test
       register: bd_present
     
-    
+  
