@@ -6,7 +6,7 @@
  
      # Install apache
      - name: Install apache
-       ansible.builtin.package:
+         ansible.builtin.package:
          name: apache2
          state: present
      
