@@ -1,8 +1,0 @@
----
-- name: panos Firewall Ansible Playbook
-  hosts: firewalls
-  gather_facts: false
-
-  tasks:
-    - name: panos rules
-    

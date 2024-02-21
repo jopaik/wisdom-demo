@@ -1,0 +1,50 @@
+---
+- name: ZOS copy edit submit
+  hosts: zos_host
+  collections:
+    - ibm.ibm_zos_core
+  
+  tasks:
+    - name: Create temp data set name
+      ansible.builtin.command: mvstmp {{ ansible_user | upper }}
+      register: tmp_ds
+    
+    - name: "Copy local directory {{ playbook_dir }}/files to {{ tmp_data_set }} with encoding register result_copy_dir"
+      ibm.ibm_zos_core.zos_copy:
+        src: '{{ playbook_dir }}/files'
+        dest: "{{ _dest_ }}"
+        encoding:
+          from: ISO8859-1
+          to: "{{ target_charset }}"
+      register: result_copy_dir
+    
+
+    - name: "Copy PDS member {{ tmp_data_set }}(UPTIME) to a new PDS member {{ tmp_data_set }}(PSA)"
+      ibm.ibm_zos_core.zos_copy:
+        src: '{{ playbook_dir }}/files'
+        dest: "{{ _dest_ }}"
+        encoding:
+          from: ISO8859-1
+          to: "{{ target_charset }}"
+      register: result_copy_member
+    
+    - name: "Edit JCL PSA job card on z/OS managed node use zos_lineinfile"
+      ibm.ibm_zos_core.zos_lineinfile:
+        src: '{{ playbook_dir }}/files'
+        state: present
+        regexp: ^\s*SET\s+JOB\s+CONTROL\s+(\S+)$
+        line: "{{ _line_ }}"
+        insertbefore: BOF
+      register: result_edit_jcl
+    
+    - name: "Submit the JCL {{ tmp_data_set }}(PSA)"
+      ibm.ibm_zos_core.zos_job_submit:
+        src: '{{ playbook_dir }}/files'
+        location: LOCAL
+        wait: true
+      register: result_submit_job
+    
+    
+
+
+    

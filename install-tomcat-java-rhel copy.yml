@@ -1,0 +1,62 @@
+---
+- name: Install Java and Tomcat
+  hosts: "{{ HOSTS }}"
+  become: true
+  vars:
+    java_version: "11"
+    tomcat_version: "9.0.76"
+
+  tasks:
+    - name: Install Java
+      yum:
+        name:
+          - "java-{{ java_version }}-openjdk"
+          - "java-{{ java_version }}-openjdk-devel"
+        state: present
+
+    - name: Download Tomcat
+      get_url:
+        url: "https://dlcdn.apache.org//tomcat/tomcat-9/v{{ tomcat_version }}/bin/apache-tomcat-{{ tomcat_version }}.tar.gz"
+        dest: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
+        timeout: 120
+
+    - name: Extract Tomcat
+      unarchive:
+        src: "/tmp/apache-tomcat-{{ tomcat_version }}.tar.gz"
+        dest: "/opt"
+        remote_src: true
+        extra_opts: "--strip-components=1"
+
+    - name: Set Tomcat ownership
+      file:
+        path: "/opt/apache-tomcat-{{ tomcat_version }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        recurse: yes
+
+    - name: Create Tomcat systemd service file
+      template:
+        src: tomcat.service.j2
+        dest: /etc/systemd/system/tomcat.service
+        owner: root
+        group: root
+        mode: "0644"
+      notify:
+        - Reload systemd
+
+    - name: Start Tomcat service
+      systemd:
+        name: tomcat
+        state: started
+        enabled: true
+        daemon_reload: yes
+        no_block: yes
+      become: yes
+      ignore_errors: yes
+  
+  handlers:
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
+        

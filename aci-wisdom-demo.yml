@@ -18,6 +18,8 @@
         state: present
       register: tenant_present
     
+    
+
 
     
     # create VRF & create BD
@@ -49,4 +51,5 @@
         bd: ansible_test
       register: bd_present
     
+   
   
