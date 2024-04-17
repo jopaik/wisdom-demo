@@ -2,11 +2,13 @@
 - name: Hello World
   hosts: localhost
   gather_facts: no
+
   vars:
      username: "user1"
      password: "pass1"
      update_username: "update_user1"
-     update_password" "update_pass1"
+     update_password: "update_pass1"
+     
   tasks:
     # Print Hello World
     - name: Print Hello World
