@@ -9,6 +9,7 @@
       ansible.builtin.command: mvstmp {{ ansible_user | upper }}
       register: tmp_ds
     
+    
     - name: "Copy local directory {{ playbook_dir }}/files to {{ tmp_data_set }} with encoding register result_copy_dir"
       ibm.ibm_zos_core.zos_copy:
         src: '{{ playbook_dir }}/files'
@@ -17,6 +18,7 @@
           from: ISO8859-1
           to: "{{ target_charset }}"
       register: result_copy_dir
+    
     
 
     - name: "Copy PDS member {{ tmp_data_set }}(UPTIME) to a new PDS member {{ tmp_data_set }}(PSA)"

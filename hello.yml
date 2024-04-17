@@ -2,9 +2,23 @@
 - name: Hello World
   hosts: localhost
   gather_facts: no
+  vars:
+     username: "user1"
+     password: "pass1"
+     update_username: "update_user1"
+     update_password" "update_pass1"
   tasks:
     # Print Hello World
     - name: Print Hello World
       ansible.builtin.debug:
         msg: Hello World!
+    
+    # Print variables
+    - name: Print Hello World
+      ansible.builtin.debug:
+        msg: 
+          - "username {{ username }}"
+          - "password {{ password }}"
+          - "update_username {{ update_username }}"
+          - "update_password {{ update_password }}"
     

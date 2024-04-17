@@ -1,0 +1,10 @@
+fields:
+  - type: string
+    id: update_username
+    label: username
+  - type: string
+    id: update_ password
+    label: password
+required:
+  - username
+  - password
