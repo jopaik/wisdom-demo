@@ -13,8 +13,8 @@
     - name: Print Hello World
       ansible.builtin.debug:
         msg: 
-          - "username {{ username | default("user1")}}"
-          - "password {{ password | default("pass1")}}"
-          - "update_username {{ update_username | default("up_user1") }}"
-          - "update_password {{ update_password | default("up_pass1")}}"
+          - "username {{ username | default('user1') }}"
+          - "password {{ password | default('pass1') }}"
+          - "update_username {{ update_username | default('up_user1') }}"
+          - "update_password {{ update_password | default('up_pass1') }}"
     
