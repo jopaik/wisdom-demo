@@ -1,16 +1,12 @@
 ---
-- name: Hello World
+- name: Test user pass update from secrets
   hosts: localhost
   gather_facts: no
 
   tasks:
-    # Print Hello World
-    - name: Print Hello World
-      ansible.builtin.debug:
-        msg: Hello World!
     
-    # Print variables
-    - name: Print Hello World
+    # Print User Pass and its updates
+    - name: Print User Pass and updated user pass
       ansible.builtin.debug:
         msg: 
           - "username {{ username | default('user1') }}"
