@@ -14,3 +14,9 @@
           - "update_username {{ update_username | default('up_user1') }}"
           - "update_password {{ update_password | default('up_pass1') }}"
     
+    # Command to update new password
+    - name: This is where the task to update password would go
+      ansible.builtin.debug:
+        msg: 
+          - "update_username {{ update_username | default('up_user1') }}"
+          - "update_password {{ update_password | default('up_pass1') }}"
