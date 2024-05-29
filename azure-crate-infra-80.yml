@@ -1,26 +1,34 @@
 ---
-- name: Create Resource Group
+- name: Create Azure Resource Group
   hosts: localhost
   connection: local
   gather_facts: false
   tasks:
-    - name: Create resource group
-      azure_rm_resourcegroup:
-        name: "{{ resource_group_name | default('demo') }}"
-        location: "{{ region }}"
+    - name: Create resource Group
+      # Content suggestion provided by Ansible Lightspeed
+      azure.azcollection.azure_rm_resourcegroup:
+        name: "{{ _name_ }}"
+        location: "{{ _location_ }}"
+        tags:
+          testing: testing
+          delete: on-exit
+          foo: bar
 
-    - name: Create virtual network
-      azure_rm_virtualnetwork:
-        resource_group: "{{ resource_group_name | default('demo') }}"
-        name: "{{ vnet_name }}"
-        address_prefixes: "{{ vnet_cidr }}"
 
-    - name: Add subnet
-      azure_rm_subnet:
-        resource_group: "{{ resource_group_name | default('demo') }}"
-        name: "{{ subnet_name }}"
-        address_prefix: "{{ subnet_cidr }}"
-        virtual_network: "{{ vnet_name }}"
+    - name: Create virtual Network
+      # Content suggestion provided by Ansible Lightspeed
+      azure.azcollection.azure_rm_virtualnetwork:
+        resource_group: "{{ _name_ }}"
+        name: "{{ _name_ }}"
+        address_prefixes: "{{ _address_prefixes_ }}"
+
+    - name: Add subnet_cidr
+      # Content suggestion provided by Ansible Lightspeed
+      azure.azcollection.azure_rm_subnet:
+        resource_group: "{{ _name_ }}"
+        name: "{{ _name_ }}"
+        address_prefix: "{{ _address_prefix_ }}"
+        virtual_network: "{{ _virtual_network_ }}"
 
     - name: Create Network Security Group that allows SSH and RDP
       azure_rm_securitygroup:

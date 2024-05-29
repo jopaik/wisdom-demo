@@ -5,12 +5,13 @@
   
   tasks:
     # Create a temp folder & create a temp file
+    # Content suggestion provided by Ansible Lightspeed
     - name: Create a temp folder
       ansible.builtin.tempfile:
         state: directory
         suffix: demo
       register: temp_folder
-    
+
     - name: Create a temp file
       ansible.builtin.tempfile:
         state: file
