@@ -1,0 +1,67 @@
+---
+- name: VM Vcenter Configuaration
+  hosts: servers
+  gather_facts: false
+
+  tasks:
+
+    # install haproxy
+    - name: Install haproxy
+      ansible.builtin.package:
+        name: haproxy
+        state: present
+
+
+
+    # start haproxy service
+    - name: Start haproxy service
+      ansible.builtin.service:
+        name: haproxy
+        state: started
+        enabled: true
+
+   
+
+    # start keepalived
+    - name: Start keepalived
+      ansible.builtin.service:
+        name: keepalived
+        state: started
+        enabled: true
+
+   
+
+    # ESXi enter maintenance
+    - name: Esxi enter maintenance
+      ansible.builtin.command: /usr/bin/esxcli system maintenance enter --type maintenance
+      register: esxi_maintenance
+
+   
+
+    # enable TSM-SSH service
+    - name: Enable tsm-ssh service
+      ansible.builtin.command: /usr/bin/esxcli system service enable tsm-ssh
+      register: enable_tsm_ssh
+
+
+    # esxi install update
+    - name: Esxi install update
+      ansible.builtin.command: /usr/bin/esxcli system software update install --type
+        upgrade
+      register: esxi_update
+
+
+    # Deploy vm from template
+    - name: Deploy vm from template
+      ansible.builtin.command: /usr/bin/esxcli system vm template create --name "{{
+        vm_name }}" --template "{{ vm_template }}" --vcpus "{{ vm_vcpus }}" --memory
+        "{{ vm_memory }}" --disk-size "{{ vm_disk_size }}" --disk-type "{{ vm_disk_type
+        }}" --disk-bus "{{ vm_disk_bus }}" --network-name "{{ vm_network_name }}" --network-type
+        "{{ vm_network_type }}" --network-start-connected --network-start-connected-ip
+        "{{ vm_network_start_connected_ip }}" --network-start-connected-netmask "{{
+        vm_network_start_connected_netmask }}" --network-start-connected-gateway "{{
+        vm_network_start_connected_gateway }}" --network-start-connected-dns "{{ vm_network_start_connected_dns
+        }}" --network-start-connected-dns-servers "{{ vm_network_start_connected_dns_servers
+        }}" --network-start-connected-dns-search "{{ vm_network_start_connected_dns_search
+        }}" --network-start-connected-domain "{{ vm_network_start_connected_domain }}"
+        --network-start

@@ -1,0 +1,20 @@
+---
+- name: VM Vcenter Configuaration
+  hosts: servers
+  gather_facts: false
+
+  tasks:
+
+    # install haproxy
+
+    # start haproxy service
+
+    # start keepalived
+
+    # ESXi enter maintenance
+
+    # enable TSM-SSH service
+
+    # esxi install update
+
+    # Deploy vm from template
