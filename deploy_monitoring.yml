@@ -10,18 +10,33 @@
 
   tasks:
     - name: Include redhat.rhel_system_roles.cockpit
+      ansible.builtin.include_role:
+        name: redhat.rhel_system_roles.cockpit
+
+
 
     
     - name: Copy files/cockpit.conf to /etc/cockpit/
+      ansible.builtin.copy:
+        src: files/cockpit.conf
+        dest: /etc/cockpit/cockpit.conf
+        owner: root
+        group: root
+        mode: '0644'
+
 
 
     
     - name: Restart cockpit service
 
-    
-
-    
     - name: Allow cockpit through firewall
+      ansible.posix.firewalld:
+        port: 9090/tcp
+        permanent: true
+        state: enabled
+        immediate: true
+
+
  
 
     

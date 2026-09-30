@@ -1,3 +1,12 @@
 {
-    "ansible.python.interpreterPath": "/usr/bin/python3"
+    "ansible.python.interpreterPath": "/usr/bin/python3",
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": "file:///Users/jopaik/git/wisdom-demo/deploy_web.yml"
+    },
+    "ansible.executionEnvironment.image": "registry.redhat.io/ansible-automation-platform-24/ee-supported-rhel8",
+    "ansible.lightspeed.enabled": true,
+    "ansibleServer.trace.server": "messages",
+    "ansible.executionEnvironment.containerOptions": "",
+    "ansible.playbook.arguments": "-m stdout",
+    "ansible.lightspeed.suggestions.enabled": true
 }

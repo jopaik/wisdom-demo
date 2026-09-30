@@ -6,14 +6,14 @@
   tasks:
     - name: command show version
       cisco.ios.ios_command:
-        commands: '{{ commands }}'
-      register: print_output
+        commands: show version
+      register: result
+
     
     - name: show configuration
       cisco.ios.ios_command:
-        commands:
-        - show running-config
-      register: config
+        commands: show configuration
+      register: result
 
     - name: ios show interfaces
       cisco.ios.ios_command:
@@ -29,7 +29,8 @@
       - 10.0.0.2
 
     - name: configure ios_bgp peer
-          cisco.ios.ios_bgp: {}
+      cisco.ios.ios_bgp: {}
+
 
 
   

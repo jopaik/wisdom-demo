@@ -1,0 +1,15 @@
+---
+- name: Create websites
+  iis_website:
+    name: "{{ item.name }}"
+    state: present
+    port: "{{ item.port }}"
+  loop: "{{ joon_iis_websites__iis_websites }}"
+
+- name: Open firewall for websites
+  loop: "{{ joon_iis_websites__iis_websites|map(attribute='port')|list }}"
+  ansible.posix.firewalld:
+    service: "{{ item }}"
+    permanent: true
+    state: enabled
+    immediate: true

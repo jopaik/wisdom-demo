@@ -1,0 +1,49 @@
+---
+- name: Sample tasks
+  hosts: web
+  become: true
+  tasks:
+    # Check for 500MB free space in root file system
+    - name: Check for 500MB free space in root file system
+      ansible.builtin.shell: df -h | grep / | awk '{print $5}'
+      register: root_space_left
+      changed_when: false
+      failed_when: root_space_left.stdout|int < 500
+
+    # SSH keys deploy
+    - name: Ssh keys deploy
+      ansible.builtin.copy:
+        src: "{{ item }}"
+        dest: /root/.ssh/
+        mode: '0600'
+      with_fileglob:
+        - '{{ playbook_dir }}/files/id_rsa*'
+
+    # Copy file from server ‘a’ and deploy to servers ‘b’ and ‘c’
+    - name: Copy file from server ‘a’ & deploy to servers ‘b’ and ‘c’
+      ansible.builtin.copy:
+        src: "{{ item }}"
+        dest: /root/
+        mode: '0600'
+      with_fileglob:
+        - '{{ playbook_dir }}/files/a*'
+
+      ansible.builtin.copy:
+        src: "{{ item }}"
+        dest: /tmp/
+        mode: '0600'
+      with_fileglob:
+        - '{{ playbook_dir }}/files/a*'
+
+   
+    # copy index.html
+
+
+
+
+    # enable apache service & allow http through firewall
+ 
+
+
+
+

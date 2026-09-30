@@ -3,30 +3,37 @@
   hosts: web
   become: true
   tasks:
-     # Install apache
-     - name: Install apache
-       ansible.builtin.package:
-         name: apache2
-         state: present
-     
-     
-     
-     
-     # copy index.html & enable apache service & allow http through firewall
-     - name: Copy index.html
-       ansible.builtin.copy:
-         src: index.html
-         dest: /var/www/html/index.html
-     
-     - name: Enable apache service
-       ansible.builtin.service:
-         name: apache2
-         state: started
-         enabled: true
-     
-     - name: Allow http through firewall
-       ansible.posix.firewalld:
-         port: 80/tcp
-         permanent: true
-         state: enabled
+
+    # install web server on rhel
+    - name: Install web server on rhel
+      when: ansible_os_family == "RedHat"
+      ansible.builtin.package:
+        name: httpd
+        state: present
+
+
+
+    # Copy index.html & enable httpd service & allow http through firewall
+    - name: Copy index.html
+      ansible.builtin.copy:
+        src: index.html
+        dest: /var/www/html/
+
+    - name: Enable httpd service
+      ansible.builtin.service:
+        name: httpd
+        enabled: true
+        state: started
+
+    - name: Allow http through firewall
+      when: ansible_os_family == "RedHat"
+      ansible.posix.firewalld:
+        service: http
+        permanent: true
+        state: enabled
+
+
+
+
+ 
      

@@ -1,10 +1,7 @@
-fields:
-  - type: string
-    id: update_username
-    label: username
-  - type: string
-    id: update_ password
-    label: password
-required:
-  - username
-  - password
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: debug
+      ansible.builtin.debug:
+        msg: "Test debug"

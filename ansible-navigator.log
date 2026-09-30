@@ -443,3 +443,657 @@
 230712133833.784 ERROR 'ansible_navigator.main' argument {subcommand} --help: invalid choice: 'deploy_monitoring.yml' (choose from 'collections', 'config', 'doc', 'images', 'inventory', 'replay', 'run', 'welcome')
 230712133833.784 ERROR 'ansible_navigator.main' Configuration failed, using default log file location: /Users/joonpaik/git/wisdom-demo/ansible-navigator.log. Log level set to debug
 230712133833.784 INFO 'ansible_navigator.main' Review the hints and log file to see what went wrong: /Users/joonpaik/git/wisdom-demo/ansible-navigator.log
+2024-12-07T12:01:37.789079+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '85db57fe-ff81-4794-acbe-b7d109dc187d', 'counter': 1, 'stdout': '\x1b[0;31mERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:\x1b[0m', 'start_line': 0, 'end_line': 1, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.788737+00:00'}
+2024-12-07T12:01:37.789446+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '5fdd06bf-f14a-4c10-b1f9-d6910bb4a93c', 'counter': 2, 'stdout': '\x1b[0;31mJSON: Expecting value: line 1 column 1 (char 0)\x1b[0m', 'start_line': 1, 'end_line': 2, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789231+00:00'}
+2024-12-07T12:01:37.789503+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'dfee7d06-6aaa-44ab-bc40-ccf7b869df6f', 'counter': 3, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 2, 'end_line': 3, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789342+00:00'}
+2024-12-07T12:01:37.789533+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '2f4350fb-9e6a-4185-95fc-d4f04132d84f', 'counter': 4, 'stdout': '\x1b[0;31mSyntax Error while loading YAML.\x1b[0m', 'start_line': 3, 'end_line': 4, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789469+00:00'}
+2024-12-07T12:01:37.895517+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '8dab0b1a-0146-4390-9292-e9b38ff3cdca', 'counter': 5, 'stdout': '\x1b[0;31m  found character that cannot start any token. while scanning for the next token\x1b[0m', 'start_line': 4, 'end_line': 5, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789808+00:00'}
+2024-12-07T12:01:37.895615+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '80134e60-5be5-48f1-ab8a-c0af36a29f7f', 'counter': 6, 'stdout': '\x1b[0;31mfound character that cannot start any token\x1b[0m', 'start_line': 5, 'end_line': 6, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789844+00:00'}
+2024-12-07T12:01:37.895669+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'b811c28b-7f7b-461a-97c3-a9993707cda6', 'counter': 7, 'stdout': '\x1b[0;31m  in "<unicode string>", line 8, column 26\x1b[0m', 'start_line': 6, 'end_line': 7, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789874+00:00'}
+2024-12-07T12:01:37.895707+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '5757811a-bdb8-4551-bb7b-eed966557ffb', 'counter': 8, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 7, 'end_line': 8, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789902+00:00'}
+2024-12-07T12:01:37.895745+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '06bc46d6-4afd-43e4-ae7d-bb1e697dd030', 'counter': 9, 'stdout': "\x1b[0;31mThe error appears to be in '/Users/jopaik/git/wisdom-demo/test.yml': line 8, column 26, but may\x1b[0m", 'start_line': 8, 'end_line': 9, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789929+00:00'}
+2024-12-07T12:01:37.895794+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '8da29765-3f07-4fc1-9a0d-08313d719d59', 'counter': 10, 'stdout': '\x1b[0;31mbe elsewhere in the file depending on the exact syntax problem.\x1b[0m', 'start_line': 9, 'end_line': 10, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789955+00:00'}
+2024-12-07T12:01:37.895820+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'ade77c0c-23a3-460a-aeeb-9b21f87c56ad', 'counter': 11, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 10, 'end_line': 11, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.789981+00:00'}
+2024-12-07T12:01:37.895847+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'b9a1b357-e171-43b4-9a29-e92783430995', 'counter': 12, 'stdout': '\x1b[0;31mThe offending line appears to be:\x1b[0m', 'start_line': 11, 'end_line': 12, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790007+00:00'}
+2024-12-07T12:01:37.895873+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'e8d3f71a-f057-46fd-ba7b-3ba734a1e79b', 'counter': 13, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 12, 'end_line': 13, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790034+00:00'}
+2024-12-07T12:01:37.895898+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'f6a0c09e-cca6-42ca-8fe0-325cf6378f83', 'counter': 14, 'stdout': '\x1b[0;31m      ansible.builtin.debug:\x1b[0m', 'start_line': 13, 'end_line': 14, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790059+00:00'}
+2024-12-07T12:01:37.895925+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '6484d9da-b3ad-43dd-8666-b400b3dd4495', 'counter': 15, 'stdout': '\x1b[0;31m        msg: "Test debug"%\x1b[0m', 'start_line': 14, 'end_line': 15, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790085+00:00'}
+2024-12-07T12:01:37.895950+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '1b50327e-5a75-4283-bd1b-7606574ac932', 'counter': 16, 'stdout': '\x1b[0;31m                         ^ here\x1b[0m', 'start_line': 15, 'end_line': 16, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790113+00:00'}
+2024-12-07T12:01:37.895975+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '9520eb96-9cae-468f-88df-42cdb5bf3656', 'counter': 17, 'stdout': '\x1b[0;31mThis one looks easy to fix. It seems that there is a value started\x1b[0m', 'start_line': 16, 'end_line': 17, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790139+00:00'}
+2024-12-07T12:01:37.896001+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '9ca3e2a5-a6d0-4a89-979e-de02a7a74b5f', 'counter': 18, 'stdout': '\x1b[0;31mwith a quote, and the YAML parser is expecting to see the line ended\x1b[0m', 'start_line': 17, 'end_line': 18, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790164+00:00'}
+2024-12-07T12:01:37.896034+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'e175acec-fed7-4657-81de-7451611e769c', 'counter': 19, 'stdout': '\x1b[0;31mwith the same kind of quote. For instance:\x1b[0m', 'start_line': 18, 'end_line': 19, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790361+00:00'}
+2024-12-07T12:01:37.896060+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '4f7e1e50-166b-4c2c-adaf-c7104ec9f61d', 'counter': 20, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 19, 'end_line': 20, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790388+00:00'}
+2024-12-07T12:01:37.896085+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'bc7f9d30-e2e5-462b-8303-c2e4b59438b6', 'counter': 21, 'stdout': '\x1b[0;31m    when: "ok" in result.stdout\x1b[0m', 'start_line': 20, 'end_line': 21, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790414+00:00'}
+2024-12-07T12:01:37.896110+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '579e9a9f-5467-4a46-ad5c-9849006ba061', 'counter': 22, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 21, 'end_line': 22, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790438+00:00'}
+2024-12-07T12:01:37.896136+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'ea3d6183-39e9-4628-b7d6-2b7944c93348', 'counter': 23, 'stdout': '\x1b[0;31mCould be written as:\x1b[0m', 'start_line': 22, 'end_line': 23, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790463+00:00'}
+2024-12-07T12:01:37.896160+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '8f32a0cd-bd87-4173-9886-0b1eeeff52b9', 'counter': 24, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 23, 'end_line': 24, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790487+00:00'}
+2024-12-07T12:01:37.896185+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'e3e29135-d02d-4d1d-a8d4-372575b36d52', 'counter': 25, 'stdout': '\x1b[0;31m   when: \'"ok" in result.stdout\'\x1b[0m', 'start_line': 24, 'end_line': 25, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790512+00:00'}
+2024-12-07T12:01:37.896210+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '5d2f4fd8-fe27-488f-a190-ef86cf815c19', 'counter': 26, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 25, 'end_line': 26, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790536+00:00'}
+2024-12-07T12:01:37.896235+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'ab20cf63-d695-45c1-b22e-e4156185c7ec', 'counter': 27, 'stdout': '\x1b[0;31mOr equivalently:\x1b[0m', 'start_line': 26, 'end_line': 27, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790560+00:00'}
+2024-12-07T12:01:37.896260+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '4aa2d60c-d94b-4856-837d-46128e412738', 'counter': 28, 'stdout': '\x1b[0;31m\x1b[0m', 'start_line': 27, 'end_line': 28, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790584+00:00'}
+2024-12-07T12:01:37.896295+00:00 CRITICAL 'ansible_navigator.actions.run_548e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'c7dd5c10-5b32-4d13-a6b3-8bfb00727e9f', 'counter': 29, 'stdout': '\x1b[0;31m   when: "\'ok\' in result.stdout"\x1b[0m', 'start_line': 28, 'end_line': 29, 'runner_ident': '8e1ac42c-a71a-4fc4-93c5-c6916071d83d', 'created': '2024-12-07T12:01:37.790608+00:00'}
+2024-12-07T12:04:47.928162+00:00 INFO 'ansible_navigator.setup_logger' New ansible-navigator instance, logging initialized
+2024-12-07T12:04:47.928457+00:00 INFO 'ansible_navigator.setup_logger' New ansible-runner instance, logging initialized
+2024-12-07T12:04:47.928488+00:00 DEBUG 'ansible_navigator.main' Jinja2==3.1.2 
+2024-12-07T12:04:47.928507+00:00 DEBUG 'ansible_navigator.main' MarkupSafe==2.1.5 
+2024-12-07T12:04:47.928523+00:00 DEBUG 'ansible_navigator.main' Parsley==1.3 
+2024-12-07T12:04:47.928537+00:00 DEBUG 'ansible_navigator.main' PyYAML==6.0.1 
+2024-12-07T12:04:47.928550+00:00 DEBUG 'ansible_navigator.main' Pygments==2.18.0 
+2024-12-07T12:04:47.928564+00:00 DEBUG 'ansible_navigator.main' altgraph==0.17.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/altgraph/__init__.py
+2024-12-07T12:04:47.928578+00:00 DEBUG 'ansible_navigator.main' ansible-builder==3.0.1.dev66+gcac087d3 
+2024-12-07T12:04:47.928591+00:00 DEBUG 'ansible_navigator.main' ansible-compat==24.6.1 
+2024-12-07T12:04:47.928605+00:00 DEBUG 'ansible_navigator.main' ansible-core==2.15.12 
+2024-12-07T12:04:47.928618+00:00 DEBUG 'ansible_navigator.main' ansible-creator==24.1.0 
+2024-12-07T12:04:47.928632+00:00 DEBUG 'ansible_navigator.main' ansible-lint==6.22.2 
+2024-12-07T12:04:47.928645+00:00 DEBUG 'ansible_navigator.main' ansible-navigator==24.2.0 
+2024-12-07T12:04:47.928658+00:00 DEBUG 'ansible_navigator.main' ansible-runner==2.4.0 
+2024-12-07T12:04:47.928672+00:00 DEBUG 'ansible_navigator.main' attrs==23.2.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/attrs/__init__.py
+2024-12-07T12:04:47.928685+00:00 DEBUG 'ansible_navigator.main' bcrypt==4.2.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bcrypt/__init__.py
+2024-12-07T12:04:47.928698+00:00 DEBUG 'ansible_navigator.main' bindep==2.11.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bindep/__init__.py
+2024-12-07T12:04:47.928711+00:00 DEBUG 'ansible_navigator.main' black==24.4.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/black/__init__.cpython-39-darwin.so
+2024-12-07T12:04:47.928724+00:00 DEBUG 'ansible_navigator.main' bracex==2.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bracex/__init__.py
+2024-12-07T12:04:47.928736+00:00 DEBUG 'ansible_navigator.main' cachetools==5.4.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cachetools/__init__.py
+2024-12-07T12:04:47.928749+00:00 DEBUG 'ansible_navigator.main' certifi==2024.7.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/certifi/__init__.py
+2024-12-07T12:04:47.928761+00:00 DEBUG 'ansible_navigator.main' cffi==1.16.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cffi/__init__.py
+2024-12-07T12:04:47.928774+00:00 DEBUG 'ansible_navigator.main' charset-normalizer==3.3.2 
+2024-12-07T12:04:47.928786+00:00 DEBUG 'ansible_navigator.main' click==8.1.7 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/click/__init__.py
+2024-12-07T12:04:47.928798+00:00 DEBUG 'ansible_navigator.main' cryptography==42.0.8 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cryptography/__init__.py
+2024-12-07T12:04:47.928810+00:00 DEBUG 'ansible_navigator.main' distro==1.9.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/distro/__init__.py
+2024-12-07T12:04:47.928821+00:00 DEBUG 'ansible_navigator.main' docutils==0.21.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/docutils/__init__.py
+2024-12-07T12:04:47.928832+00:00 DEBUG 'ansible_navigator.main' filelock==3.14.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/filelock/__init__.py
+2024-12-07T12:04:47.928843+00:00 DEBUG 'ansible_navigator.main' future==0.18.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/future/__init__.py
+2024-12-07T12:04:47.928854+00:00 DEBUG 'ansible_navigator.main' google-auth==2.32.0 
+2024-12-07T12:04:47.928865+00:00 DEBUG 'ansible_navigator.main' idna==3.7 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/idna/__init__.py
+2024-12-07T12:04:47.928875+00:00 DEBUG 'ansible_navigator.main' importlib-metadata==6.2.1 
+2024-12-07T12:04:47.928886+00:00 DEBUG 'ansible_navigator.main' importlib-resources==5.0.7 
+2024-12-07T12:04:47.928897+00:00 DEBUG 'ansible_navigator.main' jq==1.7.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/jq.cpython-39-darwin.so
+2024-12-07T12:04:47.928908+00:00 DEBUG 'ansible_navigator.main' jsonschema-specifications==2023.12.1 
+2024-12-07T12:04:47.928918+00:00 DEBUG 'ansible_navigator.main' jsonschema==4.22.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/jsonschema/__init__.py
+2024-12-07T12:04:47.928929+00:00 DEBUG 'ansible_navigator.main' kubernetes==30.1.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/kubernetes/__init__.py
+2024-12-07T12:04:47.928940+00:00 DEBUG 'ansible_navigator.main' lockfile==0.12.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/lockfile/__init__.py
+2024-12-07T12:04:47.928950+00:00 DEBUG 'ansible_navigator.main' macholib==1.15.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/macholib/__init__.py
+2024-12-07T12:04:47.928961+00:00 DEBUG 'ansible_navigator.main' markdown-it-py==3.0.0 
+2024-12-07T12:04:47.928972+00:00 DEBUG 'ansible_navigator.main' mdurl==0.1.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/mdurl/__init__.py
+2024-12-07T12:04:47.928983+00:00 DEBUG 'ansible_navigator.main' mypy-extensions==1.0.0 
+2024-12-07T12:04:47.928994+00:00 DEBUG 'ansible_navigator.main' oauthlib==3.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/oauthlib/__init__.py
+2024-12-07T12:04:47.929004+00:00 DEBUG 'ansible_navigator.main' oc==0.2.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/oc/__init__.py
+2024-12-07T12:04:47.929015+00:00 DEBUG 'ansible_navigator.main' onigurumacffi==1.3.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/onigurumacffi.py
+2024-12-07T12:04:47.929026+00:00 DEBUG 'ansible_navigator.main' packaging==24.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/packaging/__init__.py
+2024-12-07T12:04:47.929037+00:00 DEBUG 'ansible_navigator.main' passlib==1.7.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/passlib/__init__.py
+2024-12-07T12:04:47.929047+00:00 DEBUG 'ansible_navigator.main' pathspec==0.12.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pathspec/__init__.py
+2024-12-07T12:04:47.929058+00:00 DEBUG 'ansible_navigator.main' pbr==6.0.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pbr/__init__.py
+2024-12-07T12:04:47.929069+00:00 DEBUG 'ansible_navigator.main' pexpect==4.9.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pexpect/__init__.py
+2024-12-07T12:04:47.929080+00:00 DEBUG 'ansible_navigator.main' pip==24.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pip/__init__.py
+2024-12-07T12:04:47.929090+00:00 DEBUG 'ansible_navigator.main' platformdirs==4.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/platformdirs/__init__.py
+2024-12-07T12:04:47.929101+00:00 DEBUG 'ansible_navigator.main' ptyprocess==0.7.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/ptyprocess/__init__.py
+2024-12-07T12:04:47.929112+00:00 DEBUG 'ansible_navigator.main' pyasn1==0.6.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pyasn1/__init__.py
+2024-12-07T12:04:47.929122+00:00 DEBUG 'ansible_navigator.main' pyasn1_modules==0.4.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pyasn1_modules/__init__.py
+2024-12-07T12:04:47.929133+00:00 DEBUG 'ansible_navigator.main' pycparser==2.22 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pycparser/__init__.py
+2024-12-07T12:04:47.929144+00:00 DEBUG 'ansible_navigator.main' python-daemon==3.0.1 
+2024-12-07T12:04:47.929154+00:00 DEBUG 'ansible_navigator.main' python-dateutil==2.9.0.post0 
+2024-12-07T12:04:47.929165+00:00 DEBUG 'ansible_navigator.main' referencing==0.35.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/referencing/__init__.py
+2024-12-07T12:04:47.929176+00:00 DEBUG 'ansible_navigator.main' requests-oauthlib==2.0.0 
+2024-12-07T12:04:47.929186+00:00 DEBUG 'ansible_navigator.main' requests==2.32.3 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/requests/__init__.py
+2024-12-07T12:04:47.929197+00:00 DEBUG 'ansible_navigator.main' requirements-parser==0.9.0 
+2024-12-07T12:04:47.929208+00:00 DEBUG 'ansible_navigator.main' resolvelib==1.0.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/resolvelib/__init__.py
+2024-12-07T12:04:47.929218+00:00 DEBUG 'ansible_navigator.main' rich==13.7.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/rich/__init__.py
+2024-12-07T12:04:47.929229+00:00 DEBUG 'ansible_navigator.main' rpds-py==0.18.1 
+2024-12-07T12:04:47.929240+00:00 DEBUG 'ansible_navigator.main' rsa==4.9 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/rsa/__init__.py
+2024-12-07T12:04:47.929250+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml.clib==0.2.8 
+2024-12-07T12:04:47.929261+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml==0.18.6 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/ruamel/yaml/__init__.py
+2024-12-07T12:04:47.929272+00:00 DEBUG 'ansible_navigator.main' setuptools==70.0.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/setuptools/__init__.py
+2024-12-07T12:04:47.929282+00:00 DEBUG 'ansible_navigator.main' six==1.15.0 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/six.py
+2024-12-07T12:04:47.929293+00:00 DEBUG 'ansible_navigator.main' subprocess-tee==0.4.1 
+2024-12-07T12:04:47.929304+00:00 DEBUG 'ansible_navigator.main' tomli==2.0.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/tomli/__init__.py
+2024-12-07T12:04:47.929314+00:00 DEBUG 'ansible_navigator.main' types-setuptools==70.0.0.20240524 
+2024-12-07T12:04:47.929325+00:00 DEBUG 'ansible_navigator.main' typing_extensions==4.12.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/typing_extensions.py
+2024-12-07T12:04:47.929336+00:00 DEBUG 'ansible_navigator.main' tzdata==2024.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/tzdata/__init__.py
+2024-12-07T12:04:47.929346+00:00 DEBUG 'ansible_navigator.main' urllib3==2.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py
+2024-12-07T12:04:47.929357+00:00 DEBUG 'ansible_navigator.main' wcmatch==8.5.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/wcmatch/__init__.py
+2024-12-07T12:04:47.929368+00:00 DEBUG 'ansible_navigator.main' websocket-client==1.8.0 
+2024-12-07T12:04:47.929378+00:00 DEBUG 'ansible_navigator.main' wheel==0.37.0 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/wheel/__init__.py
+2024-12-07T12:04:47.929389+00:00 DEBUG 'ansible_navigator.main' yamllint==1.35.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/yamllint/__init__.py
+2024-12-07T12:04:47.929400+00:00 DEBUG 'ansible_navigator.main' zipp==3.19.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/zipp/__init__.py
+2024-12-07T12:04:47.929412+00:00 DEBUG 'ansible_navigator.main' Default collection_doc_cache_path set to: /Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db
+2024-12-07T12:04:47.929424+00:00 DEBUG 'ansible_navigator.main' EDITOR environment variable not set
+2024-12-07T12:04:47.929434+00:00 DEBUG 'ansible_navigator.main' Default editor_command set to: vi +{line_number} {filename}
+2024-12-07T12:04:47.929445+00:00 DEBUG 'ansible_navigator.main' No config file set by ANSIBLE_NAVIGATOR_CONFIG
+2024-12-07T12:04:47.929456+00:00 DEBUG 'ansible_navigator.main' Looking in /Users/jopaik
+2024-12-07T12:04:47.929468+00:00 DEBUG 'ansible_navigator.main' Looking for '/Users/jopaik/.ansible-navigator.yml', '/Users/jopaik/.ansible-navigator.yaml' and '/Users/jopaik/.ansible-navigator.json'
+2024-12-07T12:04:47.929480+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2024-12-07T12:04:47.929491+00:00 DEBUG 'ansible_navigator.main' Looking in /Users/jopaik/git/wisdom-demo
+2024-12-07T12:04:47.929501+00:00 DEBUG 'ansible_navigator.main' Looking for '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml', '/Users/jopaik/git/wisdom-demo/ansible-navigator.yaml' and '/Users/jopaik/git/wisdom-demo/ansible-navigator.json'
+2024-12-07T12:04:47.929512+00:00 DEBUG 'ansible_navigator.main' Found 1: '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'
+2024-12-07T12:04:47.929523+00:00 DEBUG 'ansible_navigator.main' All found 1: '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'
+2024-12-07T12:04:47.929534+00:00 DEBUG 'ansible_navigator.main' Using: /Users/jopaik/git/wisdom-demo/ansible-navigator.yml
+2024-12-07T12:04:47.929545+00:00 DEBUG 'ansible_navigator.main' Using settings file at /Users/jopaik/git/wisdom-demo/ansible-navigator.yml in search path
+2024-12-07T12:04:47.929555+00:00 DEBUG 'ansible_navigator.main' Command provided: 'run /Users/jopaik/git/wisdom-demo/test.yml --ee true --ce podman --eei ghcr.io/ansible/community-ansible-dev-tools:latest'
+2024-12-07T12:04:47.929567+00:00 WARNING 'ansible_navigator.main' Configuration errors encountered, rolling back to previous configuration.
+2024-12-07T12:04:47.929578+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929589+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929600+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929611+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_write_job_events = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929621+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: app = 'run' (str/Command line)
+2024-12-07T12:04:47.929632+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: cmdline = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929643+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: collection_doc_cache_path = '/Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db' (str/Defaults)
+2024-12-07T12:04:47.929654+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: config = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929665+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_engine = 'podman' (str/Command line)
+2024-12-07T12:04:47.929675+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_options = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929686+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: display_color = 'True' (bool/Defaults)
+2024-12-07T12:04:47.929697+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_command = 'vi +{line_number} {filename}' (str/Defaults)
+2024-12-07T12:04:47.929707+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_console = 'True' (bool/Defaults)
+2024-12-07T12:04:47.929718+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: enable_prompts = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929729+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_command = '/bin/bash' (str/Defaults)
+2024-12-07T12:04:47.929739+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_shell = 'True' (bool/Defaults)
+2024-12-07T12:04:47.929750+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment = 'true' (str/Command line)
+2024-12-07T12:04:47.929761+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_image = 'ghcr.io/ansible/community-ansible-dev-tools:latest' (str/Command line)
+2024-12-07T12:04:47.929772+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929782+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: format = 'yaml' (str/Defaults)
+2024-12-07T12:04:47.929793+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_builder = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929804+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_config = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929814+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_doc = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929825+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_inventory = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929836+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_playbook = 'False' (bool/Defaults)
+2024-12-07T12:04:47.929846+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: images_details = '['everything']' (list/Defaults)
+2024-12-07T12:04:47.929857+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929867+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929877+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lint_config = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929888+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lintables = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929898+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_append = 'True' (bool/Defaults)
+2024-12-07T12:04:47.929908+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_file = '/Users/jopaik/git/wisdom-demo/ansible-navigator.log' (str/Defaults)
+2024-12-07T12:04:47.929919+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_level = 'warning' (str/Defaults)
+2024-12-07T12:04:47.929930+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: mode = 'interactive' (str/Defaults)
+2024-12-07T12:04:47.929940+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: osc4 = 'True' (bool/Defaults)
+2024-12-07T12:04:47.929950+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929961+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook = '/Users/jopaik/git/wisdom-demo/test.yml' (str/Command line)
+2024-12-07T12:04:47.929971+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_enable = 'True' (bool/Defaults)
+2024-12-07T12:04:47.929982+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.929992+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_save_as = '{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json' (str/Defaults)
+2024-12-07T12:04:47.930003+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930013+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_type = 'module' (str/Defaults)
+2024-12-07T12:04:47.930023+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930034+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_policy = 'tag' (str/Defaults)
+2024-12-07T12:04:47.930044+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930055+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_effective = 'False' (bool/Defaults)
+2024-12-07T12:04:47.930065+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sample = 'False' (bool/Defaults)
+2024-12-07T12:04:47.930076+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_schema = 'json' (str/Defaults)
+2024-12-07T12:04:47.930086+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sources = 'False' (bool/Defaults)
+2024-12-07T12:04:47.930097+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: time_zone = 'UTC' (str/Defaults)
+2024-12-07T12:04:47.930107+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: workdir = '/Users/jopaik/git/wisdom-demo' (str/Defaults)
+2024-12-07T12:04:47.930117+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930128+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930138+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930149+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_write_job_events = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930159+00:00 DEBUG 'ansible_navigator.main' After rollback: app = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930170+00:00 DEBUG 'ansible_navigator.main' After rollback: cmdline = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930180+00:00 DEBUG 'ansible_navigator.main' After rollback: collection_doc_cache_path = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930191+00:00 DEBUG 'ansible_navigator.main' After rollback: config = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930201+00:00 DEBUG 'ansible_navigator.main' After rollback: container_engine = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930212+00:00 DEBUG 'ansible_navigator.main' After rollback: container_options = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930222+00:00 DEBUG 'ansible_navigator.main' After rollback: display_color = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930233+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_command = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930243+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_console = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930254+00:00 DEBUG 'ansible_navigator.main' After rollback: enable_prompts = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930264+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_command = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930274+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_shell = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930285+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930295+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_image = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930305+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930316+00:00 DEBUG 'ansible_navigator.main' After rollback: format = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930326+00:00 DEBUG 'ansible_navigator.main' After rollback: help_builder = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930337+00:00 DEBUG 'ansible_navigator.main' After rollback: help_config = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930347+00:00 DEBUG 'ansible_navigator.main' After rollback: help_doc = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930358+00:00 DEBUG 'ansible_navigator.main' After rollback: help_inventory = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930368+00:00 DEBUG 'ansible_navigator.main' After rollback: help_playbook = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930379+00:00 DEBUG 'ansible_navigator.main' After rollback: images_details = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930389+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930399+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930410+00:00 DEBUG 'ansible_navigator.main' After rollback: lint_config = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930420+00:00 DEBUG 'ansible_navigator.main' After rollback: lintables = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930431+00:00 DEBUG 'ansible_navigator.main' After rollback: log_append = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930442+00:00 DEBUG 'ansible_navigator.main' After rollback: log_file = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930452+00:00 DEBUG 'ansible_navigator.main' After rollback: log_level = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930462+00:00 DEBUG 'ansible_navigator.main' After rollback: mode = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930473+00:00 DEBUG 'ansible_navigator.main' After rollback: osc4 = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930483+00:00 DEBUG 'ansible_navigator.main' After rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930494+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930504+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_enable = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930514+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930525+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_save_as = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930535+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930546+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_type = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930556+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930566+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_policy = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930577+00:00 DEBUG 'ansible_navigator.main' After rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930587+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_effective = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930597+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sample = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930608+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_schema = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930618+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sources = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930629+00:00 DEBUG 'ansible_navigator.main' After rollback: time_zone = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930639+00:00 DEBUG 'ansible_navigator.main' After rollback: workdir = 'Not set' (Constants/Not set)
+2024-12-07T12:04:47.930649+00:00 DEBUG 'ansible_navigator.main' Configuration rollback complete.
+2024-12-07T12:04:47.930660+00:00 DEBUG 'ansible_navigator.main' Collection doc cache not mounted
+2024-12-07T12:04:47.930674+00:00 WARNING 'ansible_navigator.main' Issues were found while applying the settings.
+2024-12-07T12:04:47.930686+00:00 INFO 'ansible_navigator.main' Command provided: 'run /Users/jopaik/git/wisdom-demo/test.yml --ee true --ce podman --eei ghcr.io/ansible/community-ansible-dev-tools:latest'
+2024-12-07T12:04:47.930699+00:00 ERROR 'ansible_navigator.main' Settings file found /Users/jopaik/git/wisdom-demo/ansible-navigator.yml, but failed to load it.
+2024-12-07T12:04:47.930710+00:00 ERROR 'ansible_navigator.main'   error was: 'mapping values are not allowed in this context   in "/Users/jopaik/git/wisdom-demo/ansible-navigator.yml", line 16, column 13'
+2024-12-07T12:04:47.930722+00:00 INFO 'ansible_navigator.main' Try checking the settings file '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'and ensure it is properly formatted
+2024-12-07T12:04:47.930734+00:00 INFO 'ansible_navigator.main' Configuration failed, using default log file location. (/Users/jopaik/git/wisdom-demo/ansible-navigator.log) Log level set to debug
+2024-12-07T12:04:47.930745+00:00 INFO 'ansible_navigator.main' Review the hints and log file to see what went wrong.
+2024-12-07T12:10:13.685553+00:00 INFO 'ansible_navigator.setup_logger' New ansible-navigator instance, logging initialized
+2024-12-07T12:10:13.685827+00:00 INFO 'ansible_navigator.setup_logger' New ansible-runner instance, logging initialized
+2024-12-07T12:10:13.685855+00:00 DEBUG 'ansible_navigator.main' Jinja2==3.1.2 
+2024-12-07T12:10:13.685872+00:00 DEBUG 'ansible_navigator.main' MarkupSafe==2.1.5 
+2024-12-07T12:10:13.685886+00:00 DEBUG 'ansible_navigator.main' Parsley==1.3 
+2024-12-07T12:10:13.685899+00:00 DEBUG 'ansible_navigator.main' PyYAML==6.0.1 
+2024-12-07T12:10:13.685911+00:00 DEBUG 'ansible_navigator.main' Pygments==2.18.0 
+2024-12-07T12:10:13.685923+00:00 DEBUG 'ansible_navigator.main' altgraph==0.17.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/altgraph/__init__.py
+2024-12-07T12:10:13.685936+00:00 DEBUG 'ansible_navigator.main' ansible-builder==3.0.1.dev66+gcac087d3 
+2024-12-07T12:10:13.685948+00:00 DEBUG 'ansible_navigator.main' ansible-compat==24.6.1 
+2024-12-07T12:10:13.685959+00:00 DEBUG 'ansible_navigator.main' ansible-core==2.15.12 
+2024-12-07T12:10:13.685971+00:00 DEBUG 'ansible_navigator.main' ansible-creator==24.1.0 
+2024-12-07T12:10:13.685983+00:00 DEBUG 'ansible_navigator.main' ansible-lint==6.22.2 
+2024-12-07T12:10:13.685995+00:00 DEBUG 'ansible_navigator.main' ansible-navigator==24.2.0 
+2024-12-07T12:10:13.686006+00:00 DEBUG 'ansible_navigator.main' ansible-runner==2.4.0 
+2024-12-07T12:10:13.686019+00:00 DEBUG 'ansible_navigator.main' attrs==23.2.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/attrs/__init__.py
+2024-12-07T12:10:13.686031+00:00 DEBUG 'ansible_navigator.main' bcrypt==4.2.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bcrypt/__init__.py
+2024-12-07T12:10:13.686043+00:00 DEBUG 'ansible_navigator.main' bindep==2.11.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bindep/__init__.py
+2024-12-07T12:10:13.686054+00:00 DEBUG 'ansible_navigator.main' black==24.4.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/black/__init__.cpython-39-darwin.so
+2024-12-07T12:10:13.686066+00:00 DEBUG 'ansible_navigator.main' bracex==2.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bracex/__init__.py
+2024-12-07T12:10:13.686078+00:00 DEBUG 'ansible_navigator.main' cachetools==5.4.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cachetools/__init__.py
+2024-12-07T12:10:13.686090+00:00 DEBUG 'ansible_navigator.main' certifi==2024.7.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/certifi/__init__.py
+2024-12-07T12:10:13.686101+00:00 DEBUG 'ansible_navigator.main' cffi==1.16.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cffi/__init__.py
+2024-12-07T12:10:13.686113+00:00 DEBUG 'ansible_navigator.main' charset-normalizer==3.3.2 
+2024-12-07T12:10:13.686125+00:00 DEBUG 'ansible_navigator.main' click==8.1.7 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/click/__init__.py
+2024-12-07T12:10:13.686136+00:00 DEBUG 'ansible_navigator.main' cryptography==42.0.8 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cryptography/__init__.py
+2024-12-07T12:10:13.686148+00:00 DEBUG 'ansible_navigator.main' distro==1.9.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/distro/__init__.py
+2024-12-07T12:10:13.686159+00:00 DEBUG 'ansible_navigator.main' docutils==0.21.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/docutils/__init__.py
+2024-12-07T12:10:13.686171+00:00 DEBUG 'ansible_navigator.main' filelock==3.14.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/filelock/__init__.py
+2024-12-07T12:10:13.686182+00:00 DEBUG 'ansible_navigator.main' future==0.18.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/future/__init__.py
+2024-12-07T12:10:13.686194+00:00 DEBUG 'ansible_navigator.main' google-auth==2.32.0 
+2024-12-07T12:10:13.686207+00:00 DEBUG 'ansible_navigator.main' idna==3.7 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/idna/__init__.py
+2024-12-07T12:10:13.686218+00:00 DEBUG 'ansible_navigator.main' importlib-metadata==6.2.1 
+2024-12-07T12:10:13.686229+00:00 DEBUG 'ansible_navigator.main' importlib-resources==5.0.7 
+2024-12-07T12:10:13.686241+00:00 DEBUG 'ansible_navigator.main' jq==1.7.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/jq.cpython-39-darwin.so
+2024-12-07T12:10:13.686252+00:00 DEBUG 'ansible_navigator.main' jsonschema-specifications==2023.12.1 
+2024-12-07T12:10:13.686264+00:00 DEBUG 'ansible_navigator.main' jsonschema==4.22.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/jsonschema/__init__.py
+2024-12-07T12:10:13.686275+00:00 DEBUG 'ansible_navigator.main' kubernetes==30.1.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/kubernetes/__init__.py
+2024-12-07T12:10:13.686286+00:00 DEBUG 'ansible_navigator.main' lockfile==0.12.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/lockfile/__init__.py
+2024-12-07T12:10:13.686298+00:00 DEBUG 'ansible_navigator.main' macholib==1.15.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/macholib/__init__.py
+2024-12-07T12:10:13.686310+00:00 DEBUG 'ansible_navigator.main' markdown-it-py==3.0.0 
+2024-12-07T12:10:13.686321+00:00 DEBUG 'ansible_navigator.main' mdurl==0.1.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/mdurl/__init__.py
+2024-12-07T12:10:13.686332+00:00 DEBUG 'ansible_navigator.main' mypy-extensions==1.0.0 
+2024-12-07T12:10:13.686344+00:00 DEBUG 'ansible_navigator.main' oauthlib==3.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/oauthlib/__init__.py
+2024-12-07T12:10:13.686356+00:00 DEBUG 'ansible_navigator.main' oc==0.2.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/oc/__init__.py
+2024-12-07T12:10:13.686367+00:00 DEBUG 'ansible_navigator.main' onigurumacffi==1.3.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/onigurumacffi.py
+2024-12-07T12:10:13.686378+00:00 DEBUG 'ansible_navigator.main' packaging==24.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/packaging/__init__.py
+2024-12-07T12:10:13.686389+00:00 DEBUG 'ansible_navigator.main' passlib==1.7.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/passlib/__init__.py
+2024-12-07T12:10:13.686400+00:00 DEBUG 'ansible_navigator.main' pathspec==0.12.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pathspec/__init__.py
+2024-12-07T12:10:13.686411+00:00 DEBUG 'ansible_navigator.main' pbr==6.0.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pbr/__init__.py
+2024-12-07T12:10:13.686422+00:00 DEBUG 'ansible_navigator.main' pexpect==4.9.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pexpect/__init__.py
+2024-12-07T12:10:13.686434+00:00 DEBUG 'ansible_navigator.main' pip==24.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pip/__init__.py
+2024-12-07T12:10:13.686445+00:00 DEBUG 'ansible_navigator.main' platformdirs==4.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/platformdirs/__init__.py
+2024-12-07T12:10:13.686455+00:00 DEBUG 'ansible_navigator.main' ptyprocess==0.7.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/ptyprocess/__init__.py
+2024-12-07T12:10:13.686466+00:00 DEBUG 'ansible_navigator.main' pyasn1==0.6.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pyasn1/__init__.py
+2024-12-07T12:10:13.686477+00:00 DEBUG 'ansible_navigator.main' pyasn1_modules==0.4.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pyasn1_modules/__init__.py
+2024-12-07T12:10:13.686488+00:00 DEBUG 'ansible_navigator.main' pycparser==2.22 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pycparser/__init__.py
+2024-12-07T12:10:13.686499+00:00 DEBUG 'ansible_navigator.main' python-daemon==3.0.1 
+2024-12-07T12:10:13.686510+00:00 DEBUG 'ansible_navigator.main' python-dateutil==2.9.0.post0 
+2024-12-07T12:10:13.686520+00:00 DEBUG 'ansible_navigator.main' referencing==0.35.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/referencing/__init__.py
+2024-12-07T12:10:13.686531+00:00 DEBUG 'ansible_navigator.main' requests-oauthlib==2.0.0 
+2024-12-07T12:10:13.686542+00:00 DEBUG 'ansible_navigator.main' requests==2.32.3 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/requests/__init__.py
+2024-12-07T12:10:13.686553+00:00 DEBUG 'ansible_navigator.main' requirements-parser==0.9.0 
+2024-12-07T12:10:13.686563+00:00 DEBUG 'ansible_navigator.main' resolvelib==1.0.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/resolvelib/__init__.py
+2024-12-07T12:10:13.686574+00:00 DEBUG 'ansible_navigator.main' rich==13.7.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/rich/__init__.py
+2024-12-07T12:10:13.686585+00:00 DEBUG 'ansible_navigator.main' rpds-py==0.18.1 
+2024-12-07T12:10:13.686595+00:00 DEBUG 'ansible_navigator.main' rsa==4.9 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/rsa/__init__.py
+2024-12-07T12:10:13.686606+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml.clib==0.2.8 
+2024-12-07T12:10:13.686617+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml==0.18.6 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/ruamel/yaml/__init__.py
+2024-12-07T12:10:13.686628+00:00 DEBUG 'ansible_navigator.main' setuptools==70.0.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/setuptools/__init__.py
+2024-12-07T12:10:13.686638+00:00 DEBUG 'ansible_navigator.main' six==1.15.0 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/six.py
+2024-12-07T12:10:13.686649+00:00 DEBUG 'ansible_navigator.main' subprocess-tee==0.4.1 
+2024-12-07T12:10:13.686660+00:00 DEBUG 'ansible_navigator.main' tomli==2.0.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/tomli/__init__.py
+2024-12-07T12:10:13.686671+00:00 DEBUG 'ansible_navigator.main' types-setuptools==70.0.0.20240524 
+2024-12-07T12:10:13.686681+00:00 DEBUG 'ansible_navigator.main' typing_extensions==4.12.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/typing_extensions.py
+2024-12-07T12:10:13.686692+00:00 DEBUG 'ansible_navigator.main' tzdata==2024.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/tzdata/__init__.py
+2024-12-07T12:10:13.686703+00:00 DEBUG 'ansible_navigator.main' urllib3==2.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py
+2024-12-07T12:10:13.686714+00:00 DEBUG 'ansible_navigator.main' wcmatch==8.5.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/wcmatch/__init__.py
+2024-12-07T12:10:13.686725+00:00 DEBUG 'ansible_navigator.main' websocket-client==1.8.0 
+2024-12-07T12:10:13.686735+00:00 DEBUG 'ansible_navigator.main' wheel==0.37.0 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/wheel/__init__.py
+2024-12-07T12:10:13.686746+00:00 DEBUG 'ansible_navigator.main' yamllint==1.35.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/yamllint/__init__.py
+2024-12-07T12:10:13.686757+00:00 DEBUG 'ansible_navigator.main' zipp==3.19.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/zipp/__init__.py
+2024-12-07T12:10:13.686767+00:00 DEBUG 'ansible_navigator.main' Default collection_doc_cache_path set to: /Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db
+2024-12-07T12:10:13.686778+00:00 DEBUG 'ansible_navigator.main' EDITOR environment variable not set
+2024-12-07T12:10:13.686789+00:00 DEBUG 'ansible_navigator.main' Default editor_command set to: vi +{line_number} {filename}
+2024-12-07T12:10:13.686800+00:00 DEBUG 'ansible_navigator.main' No config file set by ANSIBLE_NAVIGATOR_CONFIG
+2024-12-07T12:10:13.686810+00:00 DEBUG 'ansible_navigator.main' Looking in /Users/jopaik
+2024-12-07T12:10:13.686821+00:00 DEBUG 'ansible_navigator.main' Looking for '/Users/jopaik/.ansible-navigator.yml', '/Users/jopaik/.ansible-navigator.yaml' and '/Users/jopaik/.ansible-navigator.json'
+2024-12-07T12:10:13.686832+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2024-12-07T12:10:13.686843+00:00 DEBUG 'ansible_navigator.main' Looking in /Users/jopaik/git/wisdom-demo
+2024-12-07T12:10:13.686853+00:00 DEBUG 'ansible_navigator.main' Looking for '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml', '/Users/jopaik/git/wisdom-demo/ansible-navigator.yaml' and '/Users/jopaik/git/wisdom-demo/ansible-navigator.json'
+2024-12-07T12:10:13.686864+00:00 DEBUG 'ansible_navigator.main' Found 1: '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'
+2024-12-07T12:10:13.686875+00:00 DEBUG 'ansible_navigator.main' All found 1: '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'
+2024-12-07T12:10:13.686886+00:00 DEBUG 'ansible_navigator.main' Using: /Users/jopaik/git/wisdom-demo/ansible-navigator.yml
+2024-12-07T12:10:13.686896+00:00 DEBUG 'ansible_navigator.main' Using settings file at /Users/jopaik/git/wisdom-demo/ansible-navigator.yml in search path
+2024-12-07T12:10:13.686907+00:00 DEBUG 'ansible_navigator.main' Command provided: 'help'
+2024-12-07T12:10:13.686919+00:00 WARNING 'ansible_navigator.main' Configuration errors encountered, rolling back to previous configuration.
+2024-12-07T12:10:13.686930+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.686941+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.686951+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.686962+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_write_job_events = 'False' (bool/Defaults)
+2024-12-07T12:10:13.686973+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: app = 'welcome' (str/Defaults)
+2024-12-07T12:10:13.686984+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: cmdline = '['help']' (list/Command line)
+2024-12-07T12:10:13.686994+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: collection_doc_cache_path = '/Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db' (str/Defaults)
+2024-12-07T12:10:13.687005+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: config = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687016+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_engine = 'auto' (str/Defaults)
+2024-12-07T12:10:13.687026+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_options = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687037+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: display_color = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687048+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_command = 'vi +{line_number} {filename}' (str/Defaults)
+2024-12-07T12:10:13.687058+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_console = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687069+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: enable_prompts = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687079+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_command = '/bin/bash' (str/Defaults)
+2024-12-07T12:10:13.687090+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_shell = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687100+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687111+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_image = 'ghcr.io/ansible/creator-ee:v0.22.0' (str/Defaults)
+2024-12-07T12:10:13.687122+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687132+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: format = 'yaml' (str/Defaults)
+2024-12-07T12:10:13.687143+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_builder = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687153+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_config = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687164+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_doc = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687174+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_inventory = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687185+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_playbook = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687196+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: images_details = '['everything']' (list/Defaults)
+2024-12-07T12:10:13.687210+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687221+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687231+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lint_config = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687242+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lintables = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687252+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_append = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687263+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_file = '/Users/jopaik/git/wisdom-demo/ansible-navigator.log' (str/Defaults)
+2024-12-07T12:10:13.687273+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_level = 'warning' (str/Defaults)
+2024-12-07T12:10:13.687284+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: mode = 'interactive' (str/Defaults)
+2024-12-07T12:10:13.687294+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: osc4 = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687305+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687315+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687326+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_enable = 'True' (bool/Defaults)
+2024-12-07T12:10:13.687337+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687347+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_save_as = '{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json' (str/Defaults)
+2024-12-07T12:10:13.687358+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687369+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_type = 'module' (str/Defaults)
+2024-12-07T12:10:13.687379+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687390+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_policy = 'tag' (str/Defaults)
+2024-12-07T12:10:13.687400+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687411+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_effective = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687421+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sample = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687432+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_schema = 'json' (str/Defaults)
+2024-12-07T12:10:13.687442+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sources = 'False' (bool/Defaults)
+2024-12-07T12:10:13.687453+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: time_zone = 'UTC' (str/Defaults)
+2024-12-07T12:10:13.687464+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: workdir = '/Users/jopaik/git/wisdom-demo' (str/Defaults)
+2024-12-07T12:10:13.687474+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687485+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687495+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687506+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_write_job_events = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687516+00:00 DEBUG 'ansible_navigator.main' After rollback: app = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687527+00:00 DEBUG 'ansible_navigator.main' After rollback: cmdline = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687538+00:00 DEBUG 'ansible_navigator.main' After rollback: collection_doc_cache_path = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687548+00:00 DEBUG 'ansible_navigator.main' After rollback: config = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687558+00:00 DEBUG 'ansible_navigator.main' After rollback: container_engine = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687569+00:00 DEBUG 'ansible_navigator.main' After rollback: container_options = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687580+00:00 DEBUG 'ansible_navigator.main' After rollback: display_color = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687592+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_command = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687603+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_console = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687615+00:00 DEBUG 'ansible_navigator.main' After rollback: enable_prompts = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687629+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_command = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687644+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_shell = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687657+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687668+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_image = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687679+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687689+00:00 DEBUG 'ansible_navigator.main' After rollback: format = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687700+00:00 DEBUG 'ansible_navigator.main' After rollback: help_builder = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687710+00:00 DEBUG 'ansible_navigator.main' After rollback: help_config = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687721+00:00 DEBUG 'ansible_navigator.main' After rollback: help_doc = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687731+00:00 DEBUG 'ansible_navigator.main' After rollback: help_inventory = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687742+00:00 DEBUG 'ansible_navigator.main' After rollback: help_playbook = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687752+00:00 DEBUG 'ansible_navigator.main' After rollback: images_details = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687763+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687773+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory_column = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687783+00:00 DEBUG 'ansible_navigator.main' After rollback: lint_config = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687794+00:00 DEBUG 'ansible_navigator.main' After rollback: lintables = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687804+00:00 DEBUG 'ansible_navigator.main' After rollback: log_append = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687815+00:00 DEBUG 'ansible_navigator.main' After rollback: log_file = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687825+00:00 DEBUG 'ansible_navigator.main' After rollback: log_level = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687836+00:00 DEBUG 'ansible_navigator.main' After rollback: mode = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687846+00:00 DEBUG 'ansible_navigator.main' After rollback: osc4 = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687857+00:00 DEBUG 'ansible_navigator.main' After rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687867+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687877+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_enable = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687888+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687898+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_save_as = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687909+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_name = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687920+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_type = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687930+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_arguments = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687941+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_policy = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687951+00:00 DEBUG 'ansible_navigator.main' After rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687962+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_effective = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687972+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sample = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687983+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_schema = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.687993+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sources = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.688004+00:00 DEBUG 'ansible_navigator.main' After rollback: time_zone = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.688014+00:00 DEBUG 'ansible_navigator.main' After rollback: workdir = 'Not set' (Constants/Not set)
+2024-12-07T12:10:13.688025+00:00 DEBUG 'ansible_navigator.main' Configuration rollback complete.
+2024-12-07T12:10:13.688036+00:00 DEBUG 'ansible_navigator.main' Collection doc cache not mounted
+2024-12-07T12:10:13.688050+00:00 WARNING 'ansible_navigator.main' Issues were found while applying the settings.
+2024-12-07T12:10:13.688062+00:00 INFO 'ansible_navigator.main' Command provided: 'help'
+2024-12-07T12:10:13.688074+00:00 ERROR 'ansible_navigator.main' Settings file found /Users/jopaik/git/wisdom-demo/ansible-navigator.yml, but failed to load it.
+2024-12-07T12:10:13.688086+00:00 ERROR 'ansible_navigator.main'   error was: 'mapping values are not allowed in this context   in "/Users/jopaik/git/wisdom-demo/ansible-navigator.yml", line 16, column 13'
+2024-12-07T12:10:13.688098+00:00 INFO 'ansible_navigator.main' Try checking the settings file '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'and ensure it is properly formatted
+2024-12-07T12:10:13.688110+00:00 ERROR 'ansible_navigator.main' argument {subcommand} --help: invalid choice: 'help' (choose from 'builder', 'collections', 'config', 'doc', 'exec', 'images', 'inventory', 'lint', 'replay', 'run', 'settings', 'welcome')
+2024-12-07T12:10:13.688121+00:00 INFO 'ansible_navigator.main' Configuration failed, using default log file location. (/Users/jopaik/git/wisdom-demo/ansible-navigator.log) Log level set to debug
+2024-12-07T12:10:13.688133+00:00 INFO 'ansible_navigator.main' Review the hints and log file to see what went wrong.
+2025-03-14T14:23:02.347003+00:00 INFO 'ansible_navigator.setup_logger' New ansible-navigator instance, logging initialized
+2025-03-14T14:23:02.348691+00:00 INFO 'ansible_navigator.setup_logger' New ansible-runner instance, logging initialized
+2025-03-14T14:23:02.348720+00:00 DEBUG 'ansible_navigator.main' Jinja2==3.1.2 
+2025-03-14T14:23:02.348738+00:00 DEBUG 'ansible_navigator.main' MarkupSafe==2.1.5 
+2025-03-14T14:23:02.348753+00:00 DEBUG 'ansible_navigator.main' Parsley==1.3 
+2025-03-14T14:23:02.348766+00:00 DEBUG 'ansible_navigator.main' PyYAML==6.0.1 
+2025-03-14T14:23:02.348778+00:00 DEBUG 'ansible_navigator.main' Pygments==2.18.0 
+2025-03-14T14:23:02.348791+00:00 DEBUG 'ansible_navigator.main' altgraph==0.17.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/altgraph/__init__.py
+2025-03-14T14:23:02.348804+00:00 DEBUG 'ansible_navigator.main' ansible-builder==3.0.1.dev66+gcac087d3 
+2025-03-14T14:23:02.348825+00:00 DEBUG 'ansible_navigator.main' ansible-compat==24.6.1 
+2025-03-14T14:23:02.348838+00:00 DEBUG 'ansible_navigator.main' ansible-core==2.15.12 
+2025-03-14T14:23:02.348849+00:00 DEBUG 'ansible_navigator.main' ansible-creator==24.1.0 
+2025-03-14T14:23:02.348861+00:00 DEBUG 'ansible_navigator.main' ansible-lint==6.22.2 
+2025-03-14T14:23:02.348872+00:00 DEBUG 'ansible_navigator.main' ansible-navigator==24.2.0 
+2025-03-14T14:23:02.348883+00:00 DEBUG 'ansible_navigator.main' ansible-runner==2.4.0 
+2025-03-14T14:23:02.348894+00:00 DEBUG 'ansible_navigator.main' attrs==23.2.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/attrs/__init__.py
+2025-03-14T14:23:02.348904+00:00 DEBUG 'ansible_navigator.main' bcrypt==4.2.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bcrypt/__init__.py
+2025-03-14T14:23:02.348915+00:00 DEBUG 'ansible_navigator.main' bindep==2.11.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bindep/__init__.py
+2025-03-14T14:23:02.348925+00:00 DEBUG 'ansible_navigator.main' black==24.4.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/black/__init__.cpython-39-darwin.so
+2025-03-14T14:23:02.348938+00:00 DEBUG 'ansible_navigator.main' bracex==2.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/bracex/__init__.py
+2025-03-14T14:23:02.348951+00:00 DEBUG 'ansible_navigator.main' cachetools==5.4.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cachetools/__init__.py
+2025-03-14T14:23:02.348963+00:00 DEBUG 'ansible_navigator.main' certifi==2024.7.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/certifi/__init__.py
+2025-03-14T14:23:02.348974+00:00 DEBUG 'ansible_navigator.main' cffi==1.16.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cffi/__init__.py
+2025-03-14T14:23:02.348984+00:00 DEBUG 'ansible_navigator.main' charset-normalizer==3.3.2 
+2025-03-14T14:23:02.348995+00:00 DEBUG 'ansible_navigator.main' click==8.1.7 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/click/__init__.py
+2025-03-14T14:23:02.349006+00:00 DEBUG 'ansible_navigator.main' cryptography==42.0.8 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/cryptography/__init__.py
+2025-03-14T14:23:02.349017+00:00 DEBUG 'ansible_navigator.main' distro==1.9.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/distro/__init__.py
+2025-03-14T14:23:02.349028+00:00 DEBUG 'ansible_navigator.main' docutils==0.21.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/docutils/__init__.py
+2025-03-14T14:23:02.349038+00:00 DEBUG 'ansible_navigator.main' filelock==3.14.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/filelock/__init__.py
+2025-03-14T14:23:02.349049+00:00 DEBUG 'ansible_navigator.main' future==0.18.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/future/__init__.py
+2025-03-14T14:23:02.349060+00:00 DEBUG 'ansible_navigator.main' google-auth==2.32.0 
+2025-03-14T14:23:02.349071+00:00 DEBUG 'ansible_navigator.main' idna==3.7 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/idna/__init__.py
+2025-03-14T14:23:02.349081+00:00 DEBUG 'ansible_navigator.main' importlib-metadata==6.2.1 
+2025-03-14T14:23:02.349091+00:00 DEBUG 'ansible_navigator.main' importlib-resources==5.0.7 
+2025-03-14T14:23:02.349101+00:00 DEBUG 'ansible_navigator.main' jq==1.7.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/jq.cpython-39-darwin.so
+2025-03-14T14:23:02.349111+00:00 DEBUG 'ansible_navigator.main' jsonschema-specifications==2023.12.1 
+2025-03-14T14:23:02.349121+00:00 DEBUG 'ansible_navigator.main' jsonschema==4.22.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/jsonschema/__init__.py
+2025-03-14T14:23:02.349131+00:00 DEBUG 'ansible_navigator.main' kubernetes==30.1.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/kubernetes/__init__.py
+2025-03-14T14:23:02.349140+00:00 DEBUG 'ansible_navigator.main' lockfile==0.12.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/lockfile/__init__.py
+2025-03-14T14:23:02.349156+00:00 DEBUG 'ansible_navigator.main' macholib==1.15.2 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/macholib/__init__.py
+2025-03-14T14:23:02.349166+00:00 DEBUG 'ansible_navigator.main' markdown-it-py==3.0.0 
+2025-03-14T14:23:02.349176+00:00 DEBUG 'ansible_navigator.main' mdurl==0.1.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/mdurl/__init__.py
+2025-03-14T14:23:02.349186+00:00 DEBUG 'ansible_navigator.main' mypy-extensions==1.0.0 
+2025-03-14T14:23:02.349195+00:00 DEBUG 'ansible_navigator.main' oauthlib==3.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/oauthlib/__init__.py
+2025-03-14T14:23:02.349205+00:00 DEBUG 'ansible_navigator.main' oc==0.2.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/oc/__init__.py
+2025-03-14T14:23:02.349215+00:00 DEBUG 'ansible_navigator.main' onigurumacffi==1.3.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/onigurumacffi.py
+2025-03-14T14:23:02.349225+00:00 DEBUG 'ansible_navigator.main' packaging==24.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/packaging/__init__.py
+2025-03-14T14:23:02.349234+00:00 DEBUG 'ansible_navigator.main' passlib==1.7.4 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/passlib/__init__.py
+2025-03-14T14:23:02.349244+00:00 DEBUG 'ansible_navigator.main' pathspec==0.12.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pathspec/__init__.py
+2025-03-14T14:23:02.349254+00:00 DEBUG 'ansible_navigator.main' pbr==6.0.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pbr/__init__.py
+2025-03-14T14:23:02.349264+00:00 DEBUG 'ansible_navigator.main' pexpect==4.9.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pexpect/__init__.py
+2025-03-14T14:23:02.349274+00:00 DEBUG 'ansible_navigator.main' pip==24.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pip/__init__.py
+2025-03-14T14:23:02.349283+00:00 DEBUG 'ansible_navigator.main' platformdirs==4.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/platformdirs/__init__.py
+2025-03-14T14:23:02.349293+00:00 DEBUG 'ansible_navigator.main' ptyprocess==0.7.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/ptyprocess/__init__.py
+2025-03-14T14:23:02.349303+00:00 DEBUG 'ansible_navigator.main' pyasn1==0.6.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pyasn1/__init__.py
+2025-03-14T14:23:02.349313+00:00 DEBUG 'ansible_navigator.main' pyasn1_modules==0.4.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pyasn1_modules/__init__.py
+2025-03-14T14:23:02.349323+00:00 DEBUG 'ansible_navigator.main' pycparser==2.22 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/pycparser/__init__.py
+2025-03-14T14:23:02.349332+00:00 DEBUG 'ansible_navigator.main' python-daemon==3.0.1 
+2025-03-14T14:23:02.349349+00:00 DEBUG 'ansible_navigator.main' python-dateutil==2.9.0.post0 
+2025-03-14T14:23:02.349359+00:00 DEBUG 'ansible_navigator.main' referencing==0.35.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/referencing/__init__.py
+2025-03-14T14:23:02.349369+00:00 DEBUG 'ansible_navigator.main' requests-oauthlib==2.0.0 
+2025-03-14T14:23:02.349378+00:00 DEBUG 'ansible_navigator.main' requests==2.32.3 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/requests/__init__.py
+2025-03-14T14:23:02.349388+00:00 DEBUG 'ansible_navigator.main' requirements-parser==0.9.0 
+2025-03-14T14:23:02.349398+00:00 DEBUG 'ansible_navigator.main' resolvelib==1.0.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/resolvelib/__init__.py
+2025-03-14T14:23:02.349408+00:00 DEBUG 'ansible_navigator.main' rich==13.7.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/rich/__init__.py
+2025-03-14T14:23:02.349420+00:00 DEBUG 'ansible_navigator.main' rpds-py==0.18.1 
+2025-03-14T14:23:02.349436+00:00 DEBUG 'ansible_navigator.main' rsa==4.9 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/rsa/__init__.py
+2025-03-14T14:23:02.349447+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml.clib==0.2.8 
+2025-03-14T14:23:02.349458+00:00 DEBUG 'ansible_navigator.main' ruamel.yaml==0.18.6 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/ruamel/yaml/__init__.py
+2025-03-14T14:23:02.349468+00:00 DEBUG 'ansible_navigator.main' setuptools==70.0.0 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/setuptools/__init__.py
+2025-03-14T14:23:02.349479+00:00 DEBUG 'ansible_navigator.main' six==1.15.0 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/six.py
+2025-03-14T14:23:02.349490+00:00 DEBUG 'ansible_navigator.main' subprocess-tee==0.4.1 
+2025-03-14T14:23:02.349500+00:00 DEBUG 'ansible_navigator.main' tomli==2.0.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/tomli/__init__.py
+2025-03-14T14:23:02.349511+00:00 DEBUG 'ansible_navigator.main' types-setuptools==70.0.0.20240524 
+2025-03-14T14:23:02.349522+00:00 DEBUG 'ansible_navigator.main' typing_extensions==4.12.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/typing_extensions.py
+2025-03-14T14:23:02.349533+00:00 DEBUG 'ansible_navigator.main' tzdata==2024.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/tzdata/__init__.py
+2025-03-14T14:23:02.349543+00:00 DEBUG 'ansible_navigator.main' urllib3==2.2.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py
+2025-03-14T14:23:02.349554+00:00 DEBUG 'ansible_navigator.main' wcmatch==8.5.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/wcmatch/__init__.py
+2025-03-14T14:23:02.349564+00:00 DEBUG 'ansible_navigator.main' websocket-client==1.8.0 
+2025-03-14T14:23:02.349575+00:00 DEBUG 'ansible_navigator.main' wheel==0.37.0 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages/wheel/__init__.py
+2025-03-14T14:23:02.349586+00:00 DEBUG 'ansible_navigator.main' yamllint==1.35.1 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/yamllint/__init__.py
+2025-03-14T14:23:02.349597+00:00 DEBUG 'ansible_navigator.main' zipp==3.19.2 /Users/jopaik/Library/Python/3.9/lib/python/site-packages/zipp/__init__.py
+2025-03-14T14:23:02.349608+00:00 DEBUG 'ansible_navigator.main' Default collection_doc_cache_path set to: /Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db
+2025-03-14T14:23:02.349619+00:00 DEBUG 'ansible_navigator.main' EDITOR environment variable not set
+2025-03-14T14:23:02.349630+00:00 DEBUG 'ansible_navigator.main' Default editor_command set to: vi +{line_number} {filename}
+2025-03-14T14:23:02.349641+00:00 DEBUG 'ansible_navigator.main' No config file set by ANSIBLE_NAVIGATOR_CONFIG
+2025-03-14T14:23:02.349651+00:00 DEBUG 'ansible_navigator.main' Looking in /Users/jopaik
+2025-03-14T14:23:02.349662+00:00 DEBUG 'ansible_navigator.main' Looking for '/Users/jopaik/.ansible-navigator.yml', '/Users/jopaik/.ansible-navigator.yaml' and '/Users/jopaik/.ansible-navigator.json'
+2025-03-14T14:23:02.349673+00:00 DEBUG 'ansible_navigator.main' Found 0: 
+2025-03-14T14:23:02.349684+00:00 DEBUG 'ansible_navigator.main' Looking in /Users/jopaik/git/wisdom-demo
+2025-03-14T14:23:02.349694+00:00 DEBUG 'ansible_navigator.main' Looking for '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml', '/Users/jopaik/git/wisdom-demo/ansible-navigator.yaml' and '/Users/jopaik/git/wisdom-demo/ansible-navigator.json'
+2025-03-14T14:23:02.349705+00:00 DEBUG 'ansible_navigator.main' Found 1: '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'
+2025-03-14T14:23:02.349719+00:00 DEBUG 'ansible_navigator.main' All found 1: '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'
+2025-03-14T14:23:02.349733+00:00 DEBUG 'ansible_navigator.main' Using: /Users/jopaik/git/wisdom-demo/ansible-navigator.yml
+2025-03-14T14:23:02.349745+00:00 DEBUG 'ansible_navigator.main' Using settings file at /Users/jopaik/git/wisdom-demo/ansible-navigator.yml in search path
+2025-03-14T14:23:02.349756+00:00 DEBUG 'ansible_navigator.main' Command provided: ''
+2025-03-14T14:23:02.349768+00:00 WARNING 'ansible_navigator.main' Configuration errors encountered, rolling back to previous configuration.
+2025-03-14T14:23:02.349779+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349790+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349801+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349812+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: ansible_runner_write_job_events = 'False' (bool/Defaults)
+2025-03-14T14:23:02.349823+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: app = 'welcome' (str/Defaults)
+2025-03-14T14:23:02.349834+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: cmdline = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349845+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: collection_doc_cache_path = '/Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db' (str/Defaults)
+2025-03-14T14:23:02.349856+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: config = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349867+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_engine = 'auto' (str/Defaults)
+2025-03-14T14:23:02.349878+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: container_options = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349888+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: display_color = 'True' (bool/Defaults)
+2025-03-14T14:23:02.349899+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_command = 'vi +{line_number} {filename}' (str/Defaults)
+2025-03-14T14:23:02.349910+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: editor_console = 'True' (bool/Defaults)
+2025-03-14T14:23:02.349921+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: enable_prompts = 'False' (bool/Defaults)
+2025-03-14T14:23:02.349932+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_command = '/bin/bash' (str/Defaults)
+2025-03-14T14:23:02.349943+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: exec_shell = 'True' (bool/Defaults)
+2025-03-14T14:23:02.349954+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment = 'True' (bool/Defaults)
+2025-03-14T14:23:02.349965+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_image = 'ghcr.io/ansible/creator-ee:v0.22.0' (str/Defaults)
+2025-03-14T14:23:02.349975+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.349986+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: format = 'yaml' (str/Defaults)
+2025-03-14T14:23:02.349997+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_builder = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350008+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_config = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350018+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_doc = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350029+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_inventory = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350040+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: help_playbook = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350051+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: images_details = '['everything']' (list/Defaults)
+2025-03-14T14:23:02.350062+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350072+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: inventory_column = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350083+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lint_config = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350094+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: lintables = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350105+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_append = 'True' (bool/Defaults)
+2025-03-14T14:23:02.350115+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_file = '/Users/jopaik/git/wisdom-demo/ansible-navigator.log' (str/Defaults)
+2025-03-14T14:23:02.350126+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: log_level = 'warning' (str/Defaults)
+2025-03-14T14:23:02.350137+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: mode = 'interactive' (str/Defaults)
+2025-03-14T14:23:02.350148+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: osc4 = 'True' (bool/Defaults)
+2025-03-14T14:23:02.350161+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350173+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350183+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_enable = 'True' (bool/Defaults)
+2025-03-14T14:23:02.350194+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350205+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: playbook_artifact_save_as = '{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json' (str/Defaults)
+2025-03-14T14:23:02.350215+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_name = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350226+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: plugin_type = 'module' (str/Defaults)
+2025-03-14T14:23:02.350237+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_arguments = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350247+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: pull_policy = 'tag' (str/Defaults)
+2025-03-14T14:23:02.350258+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350269+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_effective = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350280+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sample = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350291+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_schema = 'json' (str/Defaults)
+2025-03-14T14:23:02.350302+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: settings_sources = 'False' (bool/Defaults)
+2025-03-14T14:23:02.350312+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: time_zone = 'UTC' (str/Defaults)
+2025-03-14T14:23:02.350323+00:00 DEBUG 'ansible_navigator.main' Prior to rollback: workdir = '/Users/jopaik/git/wisdom-demo' (str/Defaults)
+2025-03-14T14:23:02.350334+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_artifact_dir = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350345+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_rotate_artifacts_count = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350356+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_timeout = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350367+00:00 DEBUG 'ansible_navigator.main' After rollback: ansible_runner_write_job_events = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350378+00:00 DEBUG 'ansible_navigator.main' After rollback: app = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350389+00:00 DEBUG 'ansible_navigator.main' After rollback: cmdline = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350400+00:00 DEBUG 'ansible_navigator.main' After rollback: collection_doc_cache_path = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350410+00:00 DEBUG 'ansible_navigator.main' After rollback: config = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350421+00:00 DEBUG 'ansible_navigator.main' After rollback: container_engine = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350432+00:00 DEBUG 'ansible_navigator.main' After rollback: container_options = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350443+00:00 DEBUG 'ansible_navigator.main' After rollback: display_color = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350454+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_command = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350468+00:00 DEBUG 'ansible_navigator.main' After rollback: editor_console = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350479+00:00 DEBUG 'ansible_navigator.main' After rollback: enable_prompts = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350490+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_command = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350500+00:00 DEBUG 'ansible_navigator.main' After rollback: exec_shell = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350511+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350522+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_image = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350533+00:00 DEBUG 'ansible_navigator.main' After rollback: execution_environment_volume_mounts = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350543+00:00 DEBUG 'ansible_navigator.main' After rollback: format = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350554+00:00 DEBUG 'ansible_navigator.main' After rollback: help_builder = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350565+00:00 DEBUG 'ansible_navigator.main' After rollback: help_config = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350576+00:00 DEBUG 'ansible_navigator.main' After rollback: help_doc = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350587+00:00 DEBUG 'ansible_navigator.main' After rollback: help_inventory = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350597+00:00 DEBUG 'ansible_navigator.main' After rollback: help_playbook = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350608+00:00 DEBUG 'ansible_navigator.main' After rollback: images_details = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350618+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350629+00:00 DEBUG 'ansible_navigator.main' After rollback: inventory_column = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350639+00:00 DEBUG 'ansible_navigator.main' After rollback: lint_config = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350650+00:00 DEBUG 'ansible_navigator.main' After rollback: lintables = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350660+00:00 DEBUG 'ansible_navigator.main' After rollback: log_append = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350671+00:00 DEBUG 'ansible_navigator.main' After rollback: log_file = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350681+00:00 DEBUG 'ansible_navigator.main' After rollback: log_level = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350692+00:00 DEBUG 'ansible_navigator.main' After rollback: mode = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350702+00:00 DEBUG 'ansible_navigator.main' After rollback: osc4 = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350713+00:00 DEBUG 'ansible_navigator.main' After rollback: pass_environment_variable = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350723+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350733+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_enable = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350742+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_replay = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350752+00:00 DEBUG 'ansible_navigator.main' After rollback: playbook_artifact_save_as = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350762+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_name = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350772+00:00 DEBUG 'ansible_navigator.main' After rollback: plugin_type = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350782+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_arguments = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350792+00:00 DEBUG 'ansible_navigator.main' After rollback: pull_policy = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350803+00:00 DEBUG 'ansible_navigator.main' After rollback: set_environment_variable = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350816+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_effective = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350827+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sample = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350838+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_schema = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350848+00:00 DEBUG 'ansible_navigator.main' After rollback: settings_sources = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350859+00:00 DEBUG 'ansible_navigator.main' After rollback: time_zone = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350869+00:00 DEBUG 'ansible_navigator.main' After rollback: workdir = 'Not set' (Constants/Not set)
+2025-03-14T14:23:02.350880+00:00 DEBUG 'ansible_navigator.main' Configuration rollback complete.
+2025-03-14T14:23:02.350891+00:00 DEBUG 'ansible_navigator.main' Collection doc cache not mounted
+2025-03-14T14:23:02.350906+00:00 WARNING 'ansible_navigator.main' Issues were found while applying the settings.
+2025-03-14T14:23:02.350919+00:00 INFO 'ansible_navigator.main' Command provided: ''
+2025-03-14T14:23:02.350932+00:00 ERROR 'ansible_navigator.main' Settings file found /Users/jopaik/git/wisdom-demo/ansible-navigator.yml, but failed to load it.
+2025-03-14T14:23:02.350944+00:00 ERROR 'ansible_navigator.main'   error was: 'mapping values are not allowed in this context   in "/Users/jopaik/git/wisdom-demo/ansible-navigator.yml", line 16, column 13'
+2025-03-14T14:23:02.350956+00:00 INFO 'ansible_navigator.main' Try checking the settings file '/Users/jopaik/git/wisdom-demo/ansible-navigator.yml'and ensure it is properly formatted
+2025-03-14T14:23:02.350968+00:00 INFO 'ansible_navigator.main' Configuration failed, using default log file location. (/Users/jopaik/git/wisdom-demo/ansible-navigator.log) Log level set to debug
+2025-03-14T14:23:02.350980+00:00 INFO 'ansible_navigator.main' Review the hints and log file to see what went wrong.

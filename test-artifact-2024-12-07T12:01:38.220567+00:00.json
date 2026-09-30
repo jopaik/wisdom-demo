@@ -1,0 +1,182 @@
+{
+    "plays": [],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/Users/jopaik/git/wisdom-demo/inv"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/Users/jopaik/git/wisdom-demo/test.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/Users/jopaik/git/wisdom-demo"
+            },
+            "ansible-runner": {
+                "job-events": false
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/Users/jopaik/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "enable-prompts": false,
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "podman",
+                "enabled": true,
+                "environment-variables": {
+                    "pass": [
+                        "ONE",
+                        "TWO",
+                        "THREE"
+                    ],
+                    "set": {
+                        "KEY1": "VALUE1",
+                        "KEY2": "VALUE2",
+                        "KEY3": "VALUE3"
+                    }
+                },
+                "image": "ghcr.io/ansible/community-ansible-dev-tools:latest",
+                "pull": {
+                    "policy": "never"
+                }
+            },
+            "format": "yaml",
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/Users/jopaik/git/wisdom-demo/ansible-navigator.log",
+                "level": "critical"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.job-events": "Defaults",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Not set",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Ansible configuration file",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.enable-prompts": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Previous cli command",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Previous cli command",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Settings file",
+        "ansible-navigator.execution-environment.environment-variables.set": "Settings file",
+        "ansible-navigator.execution-environment.image": "Previous cli command",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Settings file",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.format": "Defaults",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Settings file",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "/Users/jopaik/git/wisdom-demo/ansible-navigator.yml",
+        "settings_file_source": "Search path"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "\u001b[0;31mERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:\u001b[0m",
+        "\u001b[0;31mJSON: Expecting value: line 1 column 1 (char 0)\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31mSyntax Error while loading YAML.\u001b[0m",
+        "\u001b[0;31m  found character that cannot start any token. while scanning for the next token\u001b[0m",
+        "\u001b[0;31mfound character that cannot start any token\u001b[0m",
+        "\u001b[0;31m  in \"<unicode string>\", line 8, column 26\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31mThe error appears to be in '/Users/jopaik/git/wisdom-demo/test.yml': line 8, column 26, but may\u001b[0m",
+        "\u001b[0;31mbe elsewhere in the file depending on the exact syntax problem.\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31mThe offending line appears to be:\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31m      ansible.builtin.debug:\u001b[0m",
+        "\u001b[0;31m        msg: \"Test debug\"%\u001b[0m",
+        "\u001b[0;31m                         ^ here\u001b[0m",
+        "\u001b[0;31mThis one looks easy to fix. It seems that there is a value started\u001b[0m",
+        "\u001b[0;31mwith a quote, and the YAML parser is expecting to see the line ended\u001b[0m",
+        "\u001b[0;31mwith the same kind of quote. For instance:\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31m    when: \"ok\" in result.stdout\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31mCould be written as:\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31m   when: '\"ok\" in result.stdout'\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31mOr equivalently:\u001b[0m",
+        "\u001b[0;31m\u001b[0m",
+        "\u001b[0;31m   when: \"'ok' in result.stdout\"\u001b[0m"
+    ],
+    "version": "2.0.0"
+}
